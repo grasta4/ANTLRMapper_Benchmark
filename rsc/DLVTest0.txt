@@ -1,0 +1,33 @@
+DLV [build BEN/Dec 17 2012   gcc 4.6.1]
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), pappa(1,2), pappa(2,2), pappa(3,2), pappa(0,3), pappa(1,3), pappa(2,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), pappa(1,2), pappa(2,2), pappa(3,2), pappa(1,3), pappa(2,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), cacca(1,1), pappa(2,2), pappa(3,2), pappa(0,3), pappa(2,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), cacca(1,1), pappa(2,2), pappa(3,2), pappa(2,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), pappa(1,2), cacca(2,2), pappa(3,2), pappa(0,3), pappa(1,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), pappa(1,2), cacca(2,2), pappa(3,2), pappa(1,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), cacca(1,1), cacca(2,2), pappa(3,2), pappa(0,3), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), cacca(1,1), cacca(2,2), pappa(3,2), pappa(3,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), pappa(1,2), pappa(2,2), cacca(3,3), pappa(0,3), pappa(1,3), pappa(2,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), pappa(1,2), pappa(2,2), cacca(3,3), pappa(1,3), pappa(2,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), cacca(1,1), pappa(2,2), cacca(3,3), pappa(0,3), pappa(2,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), cacca(1,1), pappa(2,2), cacca(3,3), pappa(2,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), pappa(1,2), cacca(2,2), cacca(3,3), pappa(0,3), pappa(1,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), pappa(1,2), cacca(2,2), cacca(3,3), pappa(1,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), pappa(0,2), cacca(1,1), cacca(2,2), cacca(3,3), pappa(0,3)}
+
+{a(0), a(1), a(2), a(3), b(2), b(3), cacca(0,0), cacca(1,1), cacca(2,2), cacca(3,3)}
