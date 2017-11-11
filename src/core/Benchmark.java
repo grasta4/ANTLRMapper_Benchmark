@@ -35,7 +35,7 @@ public class Benchmark {
 					lines.add(line);
 			}
 		
-			final File file = new File("rsc/problems/asp/" + problem + "/dlvOutputs/" + instance.charAt(0));
+			final File file = new File("rsc/problems/asp/" + problem + "/" + solver + "Outputs/" + instance.charAt(0));
 		
 			file.getParentFile().mkdir();
 		
