@@ -1,0 +1,104 @@
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl graph_colouring
+Making output (limit: <23>) of Clingo, DLV2 with instance <0001-graph_colouring-125-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+Making output (limit: <8>) of Clingo, DLV2 with instance <0003-graph_colouring-125-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+Making output (limit: <29>) of Clingo, DLV2 with instance <0007-graph_colouring-125-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+Making output (limit: <17>) of Clingo, DLV2 with instance <0009-graph_colouring-125-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV2 with instance <0010-graph_colouring-125-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV2 with instance <0013-graph_colouring-130-0.asp> of <graph_colouring> -> Clingo DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl hanoi_tower
+Making output (limit: <10>) of Clingo, DLV2 with instance <0001-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <14>) of Clingo, DLV2 with instance <0003-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <1>) of Clingo, DLV2 with instance <0009-hanoi_tower-28-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0010-hanoi_tower-29-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <24>) of Clingo, DLV2 with instance <0011-hanoi_tower-30-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV2 with instance <0024-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0029-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <12>) of Clingo, DLV2 with instance <0030-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <29>) of Clingo, DLV2 with instance <0031-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0035-hanoi_tower-60-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0037-hanoi_tower-80-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <25>) of Clingo, DLV2 with instance <0039-hanoi_tower-80-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <4>) of Clingo, DLV2 with instance <0040-hanoi_tower-80-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <30>) of Clingo, DLV2 with instance <0043-hanoi_tower-100-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+Making output (limit: <29>) of Clingo, DLV2 with instance <0044-hanoi_tower-100-0.asp> of <hanoi_tower> -> Clingo DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl labyrinth
+Making output (limit: <19>) of Clingo, DLV2 with instance <0003-labyrinth-11-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <25>) of Clingo, DLV2 with instance <0011-labyrinth-12-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <15>) of Clingo, DLV2 with instance <0018-labyrinth-11-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV2 with instance <0028-labyrinth-12-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0036-labyrinth-17-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <9>) of Clingo, DLV2 with instance <0043-labyrinth-13-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <30>) of Clingo, DLV2 with instance <0051-labyrinth-12-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV2 with instance <0059-labyrinth-13-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <5>) of Clingo, DLV2 with instance <0067-labyrinth-18-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <28>) of Clingo, DLV2 with instance <0075-labyrinth-13-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <16>) of Clingo, DLV2 with instance <0092-labyrinth-17-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <3>) of Clingo, DLV2 with instance <0100-labyrinth-17-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <12>) of Clingo, DLV2 with instance <0110-labyrinth-16-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <28>) of Clingo, DLV2 with instance <0125-labyrinth-23-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0132-labyrinth-12-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <26>) of Clingo, DLV2 with instance <0159-labyrinth-20-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV2 with instance <0165-labyrinth-13-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0175-labyrinth-15-0.asp> of <labyrinth> -> Clingo DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl maximal_clique_problem
+Making output (limit: <24>) of Clingo, DLV2 with instance <0001-Maximal_Clique-225-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <12>) of Clingo, DLV2 with instance <0002-Maximal_Clique-225-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <4>) of Clingo, DLV2 with instance <0003-Maximal_Clique-225-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV2 with instance <0006-Maximal_Clique-250-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <19>) of Clingo, DLV2 with instance <0008-Maximal_Clique-250-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <17>) of Clingo, DLV2 with instance <0009-Maximal_Clique-275-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <18>) of Clingo, DLV2 with instance <0010-Maximal_Clique-275-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0011-Maximal_Clique-275-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV2 with instance <0012-Maximal_Clique-275-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <26>) of Clingo, DLV2 with instance <0014-Maximal_Clique-300-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <9>) of Clingo, DLV2 with instance <0017-Maximal_Clique-325-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <4>) of Clingo, DLV2 with instance <0018-Maximal_Clique-325-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <24>) of Clingo, DLV2 with instance <0020-Maximal_Clique-325-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV2 with instance <0023-Maximal_Clique-350-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0024-Maximal_Clique-350-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <14>) of Clingo, DLV2 with instance <0025-Maximal_Clique-375-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <15>) of Clingo, DLV2 with instance <0026-Maximal_Clique-375-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV2 with instance <0030-Maximal_Clique-400-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <27>) of Clingo, DLV2 with instance <0031-Maximal_Clique-400-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <28>) of Clingo, DLV2 with instance <0033-Maximal_Clique-425-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <12>) of Clingo, DLV2 with instance <0034-Maximal_Clique-425-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <8>) of Clingo, DLV2 with instance <0036-Maximal_Clique-425-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <22>) of Clingo, DLV2 with instance <0037-Maximal_Clique-450-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <1>) of Clingo, DLV2 with instance <0038-Maximal_Clique-450-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <5>) of Clingo, DLV2 with instance <0040-Maximal_Clique-450-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <5>) of Clingo, DLV2 with instance <0041-Maximal_Clique-475-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <30>) of Clingo, DLV2 with instance <0044-Maximal_Clique-475-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <30>) of Clingo, DLV2 with instance <0046-Maximal_Clique-500-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <7>) of Clingo, DLV2 with instance <0048-Maximal_Clique-500-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV2 with instance <0049-Maximal_Clique-600-0.asp> of <maximal_clique_problem> -> *** Warn : (clingo): #models not 0: optimality of last model not guaranteed. Clingo DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl stable_marriage
+Making output (limit: <15>) of Clingo, DLV2 with instance <0001-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0002-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <6>) of Clingo, DLV2 with instance <0003-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <9>) of Clingo, DLV2 with instance <0006-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <12>) of Clingo, DLV2 with instance <0008-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0009-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0010-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <7>) of Clingo, DLV2 with instance <0011-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0012-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0014-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <21>) of Clingo, DLV2 with instance <0017-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV2 with instance <0018-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <11>) of Clingo, DLV2 with instance <0020-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <7>) of Clingo, DLV2 with instance <0023-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV2 with instance <0024-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <17>) of Clingo, DLV2 with instance <0025-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+Making output (limit: <11>) of Clingo, DLV2 with instance <0026-stablemarriage-0-0.asp> of <stable_marriage> -> Clingo DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl visit_all
+Making output (limit: <1>) of Clingo, DLV2 with instance <0002-visitall-14-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <7>) of Clingo, DLV2 with instance <0007-visitall-24-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <4>) of Clingo, DLV2 with instance <0024-visitall-15-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <11>) of Clingo, DLV2 with instance <0027-visitall-26-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <2>) of Clingo, DLV2 with instance <0041-visitall-16-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <3>) of Clingo, DLV2 with instance <0048-visitall-28-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV2 with instance <0062-visitall-19-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <11>) of Clingo, DLV2 with instance <0066-visitall-33-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0081-visitall-26-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <29>) of Clingo, DLV2 with instance <0083-visitall-26-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV2 with instance <0088-visitall-44-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
+
