@@ -1,0 +1,29 @@
+clingo version 5.2.2
+Reading from problems/asp/3-col/instances/0001.asp ...
+Solving...
+Answer: 1
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,g) colored(3,r) colored(4,r) colored(5,b) colored(6,b) colored(7,r)
+Answer: 2
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,g) colored(3,r) colored(4,r) colored(5,b) colored(6,g) colored(7,r)
+Answer: 3
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,r) colored(4,r) colored(5,b) colored(6,b) colored(7,r)
+Answer: 4
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,r) colored(4,r) colored(5,b) colored(6,g) colored(7,r)
+Answer: 5
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,g) colored(3,r) colored(4,r) colored(5,b) colored(6,b) colored(7,g)
+Answer: 6
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,r) colored(4,r) colored(5,b) colored(6,b) colored(7,g)
+Answer: 7
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,g) colored(4,r) colored(5,b) colored(6,g) colored(7,r)
+Answer: 8
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,g) colored(4,r) colored(5,b) colored(6,b) colored(7,r)
+Answer: 9
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,g) colored(4,r) colored(5,b) colored(6,b) colored(7,g)
+Answer: 10
+edge(2,4) edge(2,3) edge(3,5) edge(4,6) edge(4,5) edge(5,7) edge(6,7) node(2) node(3) node(4) node(5) node(6) node(7) colored(2,b) colored(3,r) colored(4,r) colored(5,g) colored(6,g) colored(7,b)
+SATISFIABLE
+
+Models       : 10+
+Calls        : 1
+Time         : 0.003s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.003s

@@ -1,0 +1,11 @@
+clingo version 5.2.2
+Reading from problems/asp/network/instances/0001.asp ...
+Solving...
+Answer: 1
+connected(a,b) connected(a,f) connected(b,c) connected(b,d) connected(c,e) connected(d,e) connected(f,e) node(a) node(b) node(c) node(d) node(f) node(e) offline(a) offline(b) offline(c) offline(d) offline(e) offline(f)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.001s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.001s

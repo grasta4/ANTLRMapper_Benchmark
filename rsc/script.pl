@@ -4,8 +4,13 @@ use strict;
 use warnings;
 
 sub makeSolutions {
-	my $problem = $_[0]; 	
+	my $problem = $_[0];
+	my $dlv = '';
 	my @instances = `ls problems/asp/$problem/instances`;
+
+	if(defined $_[1]) {
+		$dlv = 'DLV,';	
+	}
 
 	for my $instance (@instances) {
 		my $encoding = 'encoding.asp';
@@ -15,13 +20,19 @@ sub makeSolutions {
 
 		chomp($instance);
 
-		print "Making output (limit: <$limit>) of Clingo, DLV2 with instance <$instance> of <$problem> -> ";
+		print "Making output (limit: <$limit>) of Clingo, $dlv DLV2 with instance <$instance> of <$problem> -> ";
 		`./clingo -n $limit problems/asp/$problem/instances/$instance problems/asp/$problem/$encoding > problems/asp/$problem/clingoOutputs/$outputName`;
-		print 'Clingo DONE, ';		
+		print 'Clingo DONE, ';
+
+		if($dlv ne '') {
+			`./dlv -n=$limit problems/asp/$problem/instances/$instance problems/asp/$problem/$encoding > problems/asp/$problem/dlvOutputs/$outputName`;
+			print 'DLV DONE, ';
+		}
+		
 		`./dlv2 -n $limit problems/asp/$problem/instances/$instance problems/asp/$problem/$encoding > problems/asp/$problem/dlv2Outputs/$outputName`;
 		print "DLV2 DONE\n";
 	}
 }
 
-die("Invalid number of args, must be 1") if(@ARGV != 1);
-makeSolutions($ARGV[0]);
+die("Invalid number of args, must be at least 1 (the problem)\n") if(@ARGV < 1);
+makeSolutions($ARGV[0], $ARGV[1]);

@@ -102,3 +102,40 @@ Making output (limit: <23>) of Clingo, DLV2 with instance <0081-visitall-26-1.as
 Making output (limit: <29>) of Clingo, DLV2 with instance <0083-visitall-26-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
 Making output (limit: <23>) of Clingo, DLV2 with instance <0088-visitall-44-1.asp> of <visit_all> -> Clingo DONE, DLV2 DONE
 
+/*
+ * Log of problems that worked also with DLV starts from here
+*/
+
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl 3-col true
+Making output (limit: <10>) of Clingo, DLV, DLV2 with instance <0001.asp> of <3-col> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV, DLV2 with instance <0002.asp> of <3-col> -> Clingo DONE, DLV DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl ancestor true
+Making output (limit: <2>) of Clingo, DLV, DLV2 with instance <0001.asp> of <ancestor> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <16>) of Clingo, DLV, DLV2 with instance <0002.asp> of <ancestor> -> Clingo DONE, DLV DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl keys true
+Making output (limit: <11>) of Clingo, DLV, DLV2 with instance <0001.asp> of <keys> -> Clingo DONE, DLV DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl ladder true
+Making output (limit: <14>) of Clingo, DLV, DLV2 with instance <0001.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <16>) of Clingo, DLV, DLV2 with instance <0002.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <16>) of Clingo, DLV, DLV2 with instance <0003.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <16>) of Clingo, DLV, DLV2 with instance <0004.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <5>) of Clingo, DLV, DLV2 with instance <0005.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <30>) of Clingo, DLV, DLV2 with instance <0006.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <23>) of Clingo, DLV, DLV2 with instance <0007.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV, DLV2 with instance <0008.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <24>) of Clingo, DLV, DLV2 with instance <0009.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <4>) of Clingo, DLV, DLV2 with instance <0010.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <21>) of Clingo, DLV, DLV2 with instance <0011.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <19>) of Clingo, DLV, DLV2 with instance <0012.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <27>) of Clingo, DLV, DLV2 with instance <0013.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <20>) of Clingo, DLV, DLV2 with instance <0014.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <29>) of Clingo, DLV, DLV2 with instance <0015.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <15>) of Clingo, DLV, DLV2 with instance <0016.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <13>) of Clingo, DLV, DLV2 with instance <0017.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <9>) of Clingo, DLV, DLV2 with instance <0018.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <18>) of Clingo, DLV, DLV2 with instance <0019.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+Making output (limit: <10>) of Clingo, DLV, DLV2 with instance <0020.asp> of <ladder> -> Clingo DONE, DLV DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ perl script.pl network true
+Making output (limit: <12>) of Clingo, DLV, DLV2 with instance <0001.asp> of <network> -> Clingo DONE, DLV DONE, DLV2 DONE
+grasta@grasta-PC:~/Desktop/SolutionsBuilder$ 
+
