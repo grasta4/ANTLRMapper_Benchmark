@@ -1,0 +1,265 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 130 nodes.\n\nPDDL problem description loaded: \n\tDomain: GRIPPER-TYPED\n\tProblem: GRIPPER-X-7\n\t#Actions: 130\n\t#Fluents: 68\nLandmarks found: 16\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 33\n#RP_fluents 34\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{16/16/0}:IW(1) -> [2][3][4]rel_plan size: 31\n#RP_fluents 32\n{16/15/1}:IW(1) -> [2][3][4][5]rel_plan size: 29\n#RP_fluents 30\n{16/14/2}:IW(1) -> [2][3][4][5]rel_plan size: 27\n#RP_fluents 28\n{16/13/3}:IW(1) -> [2][3][4][5]rel_plan size: 25\n#RP_fluents 26\n{16/12/4}:IW(1) -> [2][3][4][5]rel_plan size: 23\n#RP_fluents 24\n{16/11/5}:IW(1) -> [2][3][4][5]rel_plan size: 21\n#RP_fluents 22\n{16/10/6}:IW(1) -> [2][3][4][5]rel_plan size: 19\n#RP_fluents 20\n{16/9/7}:IW(1) -> [2][3][4][5]rel_plan size: 17\n#RP_fluents 18\n{16/8/8}:IW(1) -> [2][3][4][5]rel_plan size: 15\n#RP_fluents 16\n{16/7/9}:IW(1) -> [2][3][4][5]rel_plan size: 13\n#RP_fluents 14\n{16/6/10}:IW(1) -> [2][3][4][5]rel_plan size: 11\n#RP_fluents 12\n{16/5/11}:IW(1) -> [2][3][4][5]rel_plan size: 9\n#RP_fluents 10\n{16/4/12}:IW(1) -> [2][3][4][5]rel_plan size: 7\n#RP_fluents 8\n{16/3/13}:IW(1) -> [2][3][4][5]rel_plan size: 5\n#RP_fluents 6\n{16/2/14}:IW(1) -> [2][3][4][5]rel_plan size: 3\n#RP_fluents 4\n{16/1/15}:IW(1) -> [2][3][4][5]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 1.10909e+08\nTotal time: 0.00779\nNodes generated during search: 1357\nNodes expanded during search: 815\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 63,
+      "plan": [
+         {
+            "action": "  (:action pick\n    :parameters (ball16 rooma left)\n    :precondition\n      (and\n        (at ball16 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball16 left)\n        (not\n          (at ball16 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball16 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball16 roomb left)\n    :precondition\n      (and\n        (carry ball16 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball16 roomb)\n        (free left)\n        (not\n          (carry ball16 left)\n        )\n      )\n  )",
+            "name": "(drop ball16 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball15 rooma left)\n    :precondition\n      (and\n        (at ball15 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball15 left)\n        (not\n          (at ball15 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball15 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball15 roomb left)\n    :precondition\n      (and\n        (carry ball15 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball15 roomb)\n        (free left)\n        (not\n          (carry ball15 left)\n        )\n      )\n  )",
+            "name": "(drop ball15 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball14 rooma left)\n    :precondition\n      (and\n        (at ball14 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball14 left)\n        (not\n          (at ball14 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball14 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball14 roomb left)\n    :precondition\n      (and\n        (carry ball14 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball14 roomb)\n        (free left)\n        (not\n          (carry ball14 left)\n        )\n      )\n  )",
+            "name": "(drop ball14 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball13 rooma left)\n    :precondition\n      (and\n        (at ball13 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball13 left)\n        (not\n          (at ball13 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball13 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball13 roomb left)\n    :precondition\n      (and\n        (carry ball13 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball13 roomb)\n        (free left)\n        (not\n          (carry ball13 left)\n        )\n      )\n  )",
+            "name": "(drop ball13 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball12 rooma left)\n    :precondition\n      (and\n        (at ball12 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball12 left)\n        (not\n          (at ball12 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball12 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball12 roomb left)\n    :precondition\n      (and\n        (carry ball12 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball12 roomb)\n        (free left)\n        (not\n          (carry ball12 left)\n        )\n      )\n  )",
+            "name": "(drop ball12 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball11 rooma left)\n    :precondition\n      (and\n        (at ball11 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball11 left)\n        (not\n          (at ball11 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball11 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball11 roomb left)\n    :precondition\n      (and\n        (carry ball11 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball11 roomb)\n        (free left)\n        (not\n          (carry ball11 left)\n        )\n      )\n  )",
+            "name": "(drop ball11 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball10 rooma left)\n    :precondition\n      (and\n        (at ball10 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball10 left)\n        (not\n          (at ball10 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball10 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball10 roomb left)\n    :precondition\n      (and\n        (carry ball10 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball10 roomb)\n        (free left)\n        (not\n          (carry ball10 left)\n        )\n      )\n  )",
+            "name": "(drop ball10 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball9 rooma left)\n    :precondition\n      (and\n        (at ball9 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball9 left)\n        (not\n          (at ball9 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball9 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball9 roomb left)\n    :precondition\n      (and\n        (carry ball9 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball9 roomb)\n        (free left)\n        (not\n          (carry ball9 left)\n        )\n      )\n  )",
+            "name": "(drop ball9 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball8 rooma left)\n    :precondition\n      (and\n        (at ball8 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball8 left)\n        (not\n          (at ball8 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball8 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball8 roomb left)\n    :precondition\n      (and\n        (carry ball8 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball8 roomb)\n        (free left)\n        (not\n          (carry ball8 left)\n        )\n      )\n  )",
+            "name": "(drop ball8 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball7 rooma left)\n    :precondition\n      (and\n        (at ball7 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball7 left)\n        (not\n          (at ball7 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball7 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball7 roomb left)\n    :precondition\n      (and\n        (carry ball7 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball7 roomb)\n        (free left)\n        (not\n          (carry ball7 left)\n        )\n      )\n  )",
+            "name": "(drop ball7 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball6 rooma left)\n    :precondition\n      (and\n        (at ball6 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball6 left)\n        (not\n          (at ball6 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball6 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball6 roomb left)\n    :precondition\n      (and\n        (carry ball6 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball6 roomb)\n        (free left)\n        (not\n          (carry ball6 left)\n        )\n      )\n  )",
+            "name": "(drop ball6 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball5 rooma left)\n    :precondition\n      (and\n        (at ball5 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball5 left)\n        (not\n          (at ball5 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball5 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball5 roomb left)\n    :precondition\n      (and\n        (carry ball5 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball5 roomb)\n        (free left)\n        (not\n          (carry ball5 left)\n        )\n      )\n  )",
+            "name": "(drop ball5 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball4 rooma left)\n    :precondition\n      (and\n        (at ball4 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball4 left)\n        (not\n          (at ball4 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball4 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball4 roomb left)\n    :precondition\n      (and\n        (carry ball4 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball4 roomb)\n        (free left)\n        (not\n          (carry ball4 left)\n        )\n      )\n  )",
+            "name": "(drop ball4 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball3 rooma left)\n    :precondition\n      (and\n        (at ball3 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball3 left)\n        (not\n          (at ball3 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball3 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball3 roomb left)\n    :precondition\n      (and\n        (carry ball3 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball3 roomb)\n        (free left)\n        (not\n          (carry ball3 left)\n        )\n      )\n  )",
+            "name": "(drop ball3 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball2 rooma left)\n    :precondition\n      (and\n        (at ball2 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball2 left)\n        (not\n          (at ball2 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball2 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball2 roomb left)\n    :precondition\n      (and\n        (carry ball2 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball2 roomb)\n        (free left)\n        (not\n          (carry ball2 left)\n        )\n      )\n  )",
+            "name": "(drop ball2 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball1 rooma left)\n    :precondition\n      (and\n        (at ball1 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball1 left)\n        (not\n          (at ball1 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball1 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball1 roomb left)\n    :precondition\n      (and\n        (carry ball1 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball1 roomb)\n        (free left)\n        (not\n          (carry ball1 left)\n        )\n      )\n  )",
+            "name": "(drop ball1 roomb left)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_4AROMbs7AAFYT/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_4AROMbs7AAFYT/log"
+   }
+}

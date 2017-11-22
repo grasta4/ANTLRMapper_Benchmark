@@ -1,0 +1,285 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 174 nodes.\n\nPDDL problem description loaded: \n\tDomain: LOGISTICS\n\tProblem: LOGISTICS-8-1\n\t#Actions: 174\n\t#Fluents: 99\nLandmarks found: 8\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 41\n#RP_fluents 41\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{8/8/0}:IW(1) -> [2][3][4][5][6]rel_plan size: 39\n#RP_fluents 39\n{8/7/1}:IW(1) -> [2][3][4][5][6]rel_plan size: 37\n#RP_fluents 37\n{8/6/2}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25]rel_plan size: 22\n#RP_fluents 22\n{8/5/3}:IW(1) -> [2][3][4][5][6][7][8]rel_plan size: 19\n#RP_fluents 19\n{8/4/4}:IW(1) -> [2][3][4][5][6][7]rel_plan size: 16\n#RP_fluents 16\n{8/3/5}:IW(1) -> [2][3][4][5][6][7][8]rel_plan size: 12\n#RP_fluents 12\n{8/2/6}:IW(1) -> [2][3][4][5][6][7][8][9]rel_plan size: 5\n#RP_fluents 5\n{8/1/7}:IW(1) -> [2][3][4][5][6][7]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 68\nTotal time: 0.010223\nNodes generated during search: 1323\nNodes expanded during search: 1123\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 68,
+      "plan": [
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt3 apt1)\n    :precondition\n      (at apn1 apt3)\n    :effect\n      (and\n        (not\n          (at apn1 apt3)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt3 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj33 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (at obj33 pos3)\n      )\n    :effect\n      (and\n        (not\n          (at obj33 pos3)\n        )\n        (in obj33 tru3)\n      )\n  )",
+            "name": "(load-truck obj33 tru3 pos3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 pos3 apt3 cit3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in-city pos3 cit3)\n        (in-city apt3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 pos3)\n        )\n        (at tru3 apt3)\n      )\n  )",
+            "name": "(drive-truck tru3 pos3 apt3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj33 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in obj33 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj33 tru3)\n        )\n        (at obj33 apt3)\n      )\n  )",
+            "name": "(unload-truck obj33 tru3 apt3)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt1)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt3)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt3)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt3)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj23 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj23 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj23 pos2)\n        )\n        (in obj23 tru2)\n      )\n  )",
+            "name": "(load-truck obj23 tru2 pos2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 pos2 apt2 cit2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (in-city pos2 cit2)\n        (in-city apt2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 pos2)\n        )\n        (at tru2 apt2)\n      )\n  )",
+            "name": "(drive-truck tru2 pos2 apt2 cit2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj23 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj23 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj23 tru2)\n        )\n        (at obj23 apt2)\n      )\n  )",
+            "name": "(unload-truck obj23 tru2 apt2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt3 apt1)\n    :precondition\n      (at apn1 apt3)\n    :effect\n      (and\n        (not\n          (at apn1 apt3)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt3 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj13 tru1 pos1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (at obj13 pos1)\n      )\n    :effect\n      (and\n        (not\n          (at obj13 pos1)\n        )\n        (in obj13 tru1)\n      )\n  )",
+            "name": "(load-truck obj13 tru1 pos1)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru1 pos1 apt1 cit1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (in-city pos1 cit1)\n        (in-city apt1 cit1)\n      )\n    :effect\n      (and\n        (not\n          (at tru1 pos1)\n        )\n        (at tru1 apt1)\n      )\n  )",
+            "name": "(drive-truck tru1 pos1 apt1 cit1)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj13 tru1 apt1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (in obj13 tru1)\n      )\n    :effect\n      (and\n        (not\n          (in obj13 tru1)\n        )\n        (at obj13 apt1)\n      )\n  )",
+            "name": "(unload-truck obj13 tru1 apt1)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 apt2 pos2 cit2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in-city apt2 cit2)\n        (in-city pos2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 apt2)\n        )\n        (at tru2 pos2)\n      )\n  )",
+            "name": "(drive-truck tru2 apt2 pos2 cit2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj22 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj22 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj22 pos2)\n        )\n        (in obj22 tru2)\n      )\n  )",
+            "name": "(load-truck obj22 tru2 pos2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj21 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj21 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj21 pos2)\n        )\n        (in obj21 tru2)\n      )\n  )",
+            "name": "(load-truck obj21 tru2 pos2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 apt3 pos3 cit3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in-city apt3 cit3)\n        (in-city pos3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 apt3)\n        )\n        (at tru3 pos3)\n      )\n  )",
+            "name": "(drive-truck tru3 apt3 pos3 cit3)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj32 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (at obj32 pos3)\n      )\n    :effect\n      (and\n        (not\n          (at obj32 pos3)\n        )\n        (in obj32 tru3)\n      )\n  )",
+            "name": "(load-truck obj32 tru3 pos3)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj31 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (at obj31 pos3)\n      )\n    :effect\n      (and\n        (not\n          (at obj31 pos3)\n        )\n        (in obj31 tru3)\n      )\n  )",
+            "name": "(load-truck obj31 tru3 pos3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 pos2 apt2 cit2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (in-city pos2 cit2)\n        (in-city apt2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 pos2)\n        )\n        (at tru2 apt2)\n      )\n  )",
+            "name": "(drive-truck tru2 pos2 apt2 cit2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj21 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj21 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj21 tru2)\n        )\n        (at obj21 apt2)\n      )\n  )",
+            "name": "(unload-truck obj21 tru2 apt2)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj21 apn1 apt2)\n    :precondition\n      (and\n        (at obj21 apt2)\n        (at apn1 apt2)\n      )\n    :effect\n      (and\n        (not\n          (at obj21 apt2)\n        )\n        (in obj21 apn1)\n      )\n  )",
+            "name": "(load-airplane obj21 apn1 apt2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj22 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj22 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj22 tru2)\n        )\n        (at obj22 apt2)\n      )\n  )",
+            "name": "(unload-truck obj22 tru2 apt2)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj22 apn1 apt2)\n    :precondition\n      (and\n        (at obj22 apt2)\n        (at apn1 apt2)\n      )\n    :effect\n      (and\n        (not\n          (at obj22 apt2)\n        )\n        (in obj22 apn1)\n      )\n  )",
+            "name": "(load-airplane obj22 apn1 apt2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 pos3 apt3 cit3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in-city pos3 cit3)\n        (in-city apt3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 pos3)\n        )\n        (at tru3 apt3)\n      )\n  )",
+            "name": "(drive-truck tru3 pos3 apt3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj31 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in obj31 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj31 tru3)\n        )\n        (at obj31 apt3)\n      )\n  )",
+            "name": "(unload-truck obj31 tru3 apt3)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt3)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt3)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt3)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj21 apn1 apt3)\n    :precondition\n      (and\n        (in obj21 apn1)\n        (at apn1 apt3)\n      )\n    :effect\n      (and\n        (not\n          (in obj21 apn1)\n        )\n        (at obj21 apt3)\n      )\n  )",
+            "name": "(unload-airplane obj21 apn1 apt3)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj22 apn1 apt3)\n    :precondition\n      (and\n        (in obj22 apn1)\n        (at apn1 apt3)\n      )\n    :effect\n      (and\n        (not\n          (in obj22 apn1)\n        )\n        (at obj22 apt3)\n      )\n  )",
+            "name": "(unload-airplane obj22 apn1 apt3)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj31 apn1 apt3)\n    :precondition\n      (and\n        (at obj31 apt3)\n        (at apn1 apt3)\n      )\n    :effect\n      (and\n        (not\n          (at obj31 apt3)\n        )\n        (in obj31 apn1)\n      )\n  )",
+            "name": "(load-airplane obj31 apn1 apt3)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt3 apt1)\n    :precondition\n      (at apn1 apt3)\n    :effect\n      (and\n        (not\n          (at apn1 apt3)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt3 apt1)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj31 apn1 apt1)\n    :precondition\n      (and\n        (in obj31 apn1)\n        (at apn1 apt1)\n      )\n    :effect\n      (and\n        (not\n          (in obj31 apn1)\n        )\n        (at obj31 apt1)\n      )\n  )",
+            "name": "(unload-airplane obj31 apn1 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt3)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt3)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru1 apt1 pos1 cit1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (in-city apt1 cit1)\n        (in-city pos1 cit1)\n      )\n    :effect\n      (and\n        (not\n          (at tru1 apt1)\n        )\n        (at tru1 pos1)\n      )\n  )",
+            "name": "(drive-truck tru1 apt1 pos1 cit1)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj12 tru1 pos1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (at obj12 pos1)\n      )\n    :effect\n      (and\n        (not\n          (at obj12 pos1)\n        )\n        (in obj12 tru1)\n      )\n  )",
+            "name": "(load-truck obj12 tru1 pos1)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj21 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (at obj21 apt3)\n      )\n    :effect\n      (and\n        (not\n          (at obj21 apt3)\n        )\n        (in obj21 tru3)\n      )\n  )",
+            "name": "(load-truck obj21 tru3 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 apt3 pos3 cit3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in-city apt3 cit3)\n        (in-city pos3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 apt3)\n        )\n        (at tru3 pos3)\n      )\n  )",
+            "name": "(drive-truck tru3 apt3 pos3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj21 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in obj21 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj21 tru3)\n        )\n        (at obj21 pos3)\n      )\n  )",
+            "name": "(unload-truck obj21 tru3 pos3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 pos3 apt3 cit3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in-city pos3 cit3)\n        (in-city apt3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 pos3)\n        )\n        (at tru3 apt3)\n      )\n  )",
+            "name": "(drive-truck tru3 pos3 apt3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj32 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in obj32 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj32 tru3)\n        )\n        (at obj32 apt3)\n      )\n  )",
+            "name": "(unload-truck obj32 tru3 apt3)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj32 apn1 apt3)\n    :precondition\n      (and\n        (at obj32 apt3)\n        (at apn1 apt3)\n      )\n    :effect\n      (and\n        (not\n          (at obj32 apt3)\n        )\n        (in obj32 apn1)\n      )\n  )",
+            "name": "(load-airplane obj32 apn1 apt3)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt3 apt1)\n    :precondition\n      (at apn1 apt3)\n    :effect\n      (and\n        (not\n          (at apn1 apt3)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt3 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj32 apn1 apt2)\n    :precondition\n      (and\n        (in obj32 apn1)\n        (at apn1 apt2)\n      )\n    :effect\n      (and\n        (not\n          (in obj32 apn1)\n        )\n        (at obj32 apt2)\n      )\n  )",
+            "name": "(unload-airplane obj32 apn1 apt2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt1)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt3)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt3)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru1 pos1 apt1 cit1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (in-city pos1 cit1)\n        (in-city apt1 cit1)\n      )\n    :effect\n      (and\n        (not\n          (at tru1 pos1)\n        )\n        (at tru1 apt1)\n      )\n  )",
+            "name": "(drive-truck tru1 pos1 apt1 cit1)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj12 tru1 apt1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (in obj12 tru1)\n      )\n    :effect\n      (and\n        (not\n          (in obj12 tru1)\n        )\n        (at obj12 apt1)\n      )\n  )",
+            "name": "(unload-truck obj12 tru1 apt1)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj22 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (at obj22 apt3)\n      )\n    :effect\n      (and\n        (not\n          (at obj22 apt3)\n        )\n        (in obj22 tru3)\n      )\n  )",
+            "name": "(load-truck obj22 tru3 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 apt3 pos3 cit3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in-city apt3 cit3)\n        (in-city pos3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 apt3)\n        )\n        (at tru3 pos3)\n      )\n  )",
+            "name": "(drive-truck tru3 apt3 pos3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj22 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in obj22 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj22 tru3)\n        )\n        (at obj22 pos3)\n      )\n  )",
+            "name": "(unload-truck obj22 tru3 pos3)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt3 apt1)\n    :precondition\n      (at apn1 apt3)\n    :effect\n      (and\n        (not\n          (at apn1 apt3)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt3 apt1)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj12 apn1 apt1)\n    :precondition\n      (and\n        (at obj12 apt1)\n        (at apn1 apt1)\n      )\n    :effect\n      (and\n        (not\n          (at obj12 apt1)\n        )\n        (in obj12 apn1)\n      )\n  )",
+            "name": "(load-airplane obj12 apn1 apt1)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj13 apn1 apt1)\n    :precondition\n      (and\n        (at obj13 apt1)\n        (at apn1 apt1)\n      )\n    :effect\n      (and\n        (not\n          (at obj13 apt1)\n        )\n        (in obj13 apn1)\n      )\n  )",
+            "name": "(load-airplane obj13 apn1 apt1)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj13 apn1 apt2)\n    :precondition\n      (and\n        (in obj13 apn1)\n        (at apn1 apt2)\n      )\n    :effect\n      (and\n        (not\n          (in obj13 apn1)\n        )\n        (at obj13 apt2)\n      )\n  )",
+            "name": "(unload-airplane obj13 apn1 apt2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj13 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (at obj13 apt2)\n      )\n    :effect\n      (and\n        (not\n          (at obj13 apt2)\n        )\n        (in obj13 tru2)\n      )\n  )",
+            "name": "(load-truck obj13 tru2 apt2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 apt2 pos2 cit2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in-city apt2 cit2)\n        (in-city pos2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 apt2)\n        )\n        (at tru2 pos2)\n      )\n  )",
+            "name": "(drive-truck tru2 apt2 pos2 cit2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj13 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (in obj13 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj13 tru2)\n        )\n        (at obj13 pos2)\n      )\n  )",
+            "name": "(unload-truck obj13 tru2 pos2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt3)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt3)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt3)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj12 apn1 apt3)\n    :precondition\n      (and\n        (in obj12 apn1)\n        (at apn1 apt3)\n      )\n    :effect\n      (and\n        (not\n          (in obj12 apn1)\n        )\n        (at obj12 apt3)\n      )\n  )",
+            "name": "(unload-airplane obj12 apn1 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 pos3 apt3 cit3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in-city pos3 cit3)\n        (in-city apt3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 pos3)\n        )\n        (at tru3 apt3)\n      )\n  )",
+            "name": "(drive-truck tru3 pos3 apt3 cit3)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj12 tru3 apt3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (at obj12 apt3)\n      )\n    :effect\n      (and\n        (not\n          (at obj12 apt3)\n        )\n        (in obj12 tru3)\n      )\n  )",
+            "name": "(load-truck obj12 tru3 apt3)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru3 apt3 pos3 cit3)\n    :precondition\n      (and\n        (at tru3 apt3)\n        (in-city apt3 cit3)\n        (in-city pos3 cit3)\n      )\n    :effect\n      (and\n        (not\n          (at tru3 apt3)\n        )\n        (at tru3 pos3)\n      )\n  )",
+            "name": "(drive-truck tru3 apt3 pos3 cit3)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj12 tru3 pos3)\n    :precondition\n      (and\n        (at tru3 pos3)\n        (in obj12 tru3)\n      )\n    :effect\n      (and\n        (not\n          (in obj12 tru3)\n        )\n        (at obj12 pos3)\n      )\n  )",
+            "name": "(unload-truck obj12 tru3 pos3)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_4bZsMVo8OK4XX/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_4bZsMVo8OK4XX/log"
+   }
+}

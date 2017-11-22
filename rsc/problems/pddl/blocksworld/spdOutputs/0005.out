@@ -1,0 +1,53 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 60 nodes.\n\nPDDL problem description loaded: \n\tDomain: BLOCKS\n\tProblem: BLOCKS-5-1\n\t#Actions: 60\n\t#Fluents: 41\nLandmarks found: 4\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 7\n#RP_fluents 11\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{4/4/0}:IW(1) -> [2][3][4][5]rel_plan size: 6\n#RP_fluents 10\n{4/3/1}:IW(1) -> [2][3]rel_plan size: 4\n#RP_fluents 7\n{4/2/2}:IW(1) -> [2][3]rel_plan size: 2\n#RP_fluents 4\n{4/1/3}:IW(1) -> [2][3]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 10\nTotal time: 0.000605\nNodes generated during search: 68\nNodes expanded during search: 35\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 10,
+      "plan": [
+         {
+            "action": "  (:action unstack\n    :parameters (b a)\n    :precondition\n      (and\n        (on b a)\n        (clear b)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding b)\n        (clear a)\n        (not\n          (clear b)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on b a)\n        )\n      )\n  )",
+            "name": "(unstack b a)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (b)\n    :precondition\n      (holding b)\n    :effect\n      (and\n        (not\n          (holding b)\n        )\n        (clear b)\n        (handempty)\n        (ontable b)\n      )\n  )",
+            "name": "(put-down b)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (a d)\n    :precondition\n      (and\n        (on a d)\n        (clear a)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding a)\n        (clear d)\n        (not\n          (clear a)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on a d)\n        )\n      )\n  )",
+            "name": "(unstack a d)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (a e)\n    :precondition\n      (and\n        (holding a)\n        (clear e)\n      )\n    :effect\n      (and\n        (not\n          (holding a)\n        )\n        (not\n          (clear e)\n        )\n        (clear a)\n        (handempty)\n        (on a e)\n      )\n  )",
+            "name": "(stack a e)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (b)\n    :precondition\n      (and\n        (clear b)\n        (ontable b)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable b)\n        )\n        (not\n          (clear b)\n        )\n        (not\n          (handempty)\n        )\n        (holding b)\n      )\n  )",
+            "name": "(pick-up b)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (b a)\n    :precondition\n      (and\n        (holding b)\n        (clear a)\n      )\n    :effect\n      (and\n        (not\n          (holding b)\n        )\n        (not\n          (clear a)\n        )\n        (clear b)\n        (handempty)\n        (on b a)\n      )\n  )",
+            "name": "(stack b a)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (c)\n    :precondition\n      (and\n        (clear c)\n        (ontable c)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable c)\n        )\n        (not\n          (clear c)\n        )\n        (not\n          (handempty)\n        )\n        (holding c)\n      )\n  )",
+            "name": "(pick-up c)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (c b)\n    :precondition\n      (and\n        (holding c)\n        (clear b)\n      )\n    :effect\n      (and\n        (not\n          (holding c)\n        )\n        (not\n          (clear b)\n        )\n        (clear c)\n        (handempty)\n        (on c b)\n      )\n  )",
+            "name": "(stack c b)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (d)\n    :precondition\n      (and\n        (clear d)\n        (ontable d)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable d)\n        )\n        (not\n          (clear d)\n        )\n        (not\n          (handempty)\n        )\n        (holding d)\n      )\n  )",
+            "name": "(pick-up d)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (d c)\n    :precondition\n      (and\n        (holding d)\n        (clear c)\n      )\n    :effect\n      (and\n        (not\n          (holding d)\n        )\n        (not\n          (clear c)\n        )\n        (clear d)\n        (handempty)\n        (on d c)\n      )\n  )",
+            "name": "(stack d c)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_42mpIdFlxUARJ/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_42mpIdFlxUARJ/log"
+   }
+}

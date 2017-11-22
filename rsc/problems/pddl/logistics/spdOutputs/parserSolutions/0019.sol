@@ -1,0 +1,1 @@
+Suspected timeout.\n\n\nff: goal can be simplified to FALSE. No plan will solve it\n\n

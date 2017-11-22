@@ -1,0 +1,1 @@
+[offline(a), offline(b), offline(c), offline(d), offline(e), offline(f), connected(a,b), connected(a,f), connected(b,c), connected(b,d), connected(c,e), connected(d,e), connected(f,e), node(a), node(b), node(c), node(d), node(e), node(f)]    {}

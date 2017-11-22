@@ -1,0 +1,309 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 1920 nodes.\n\nPDDL problem description loaded: \n\tDomain: DEPOT\n\tProblem: DEPOTPROB8765\n\t#Actions: 1920\n\t#Fluents: 334\nLandmarks found: 10\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 43\n#RP_fluents 73\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{10/10/0}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15]rel_plan size: 38\n#RP_fluents 65\n{10/9/1}:IW(1) -> [2][3][4][5][6][7][8][9][10][11]rel_plan size: 34\n#RP_fluents 60\n{10/8/2}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18]rel_plan size: 23\n#RP_fluents 42\n{10/7/3}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15]rel_plan size: 18\n#RP_fluents 36\n{10/6/4}:IW(1) -> [2][3]rel_plan size: 16\n#RP_fluents 32\n{10/5/5}:IW(1) -> [2][3]rel_plan size: 14\n#RP_fluents 28\n{10/4/6}:IW(1) -> [2][3][4]rel_plan size: 9\n#RP_fluents 19\n{10/3/7}:IW(1) -> [2][3]rel_plan size: 7\n#RP_fluents 14\n{10/2/8}:IW(1) -> [2][3][4]rel_plan size: 4\n#RP_fluents 8\n{10/1/9}:IW(1) -> [2][3][4][5][6][7][8]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 74\nTotal time: 0.12104\nNodes generated during search: 3697\nNodes expanded during search: 3066\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 74,
+      "plan": [
+         {
+            "action": "  (:action lift\n    :parameters (hoist0 crate1 pallet0 depot0)\n    :precondition\n      (and\n        (at hoist0 depot0)\n        (available hoist0)\n        (at crate1 depot0)\n        (on crate1 pallet0)\n        (clear crate1)\n      )\n    :effect\n      (and\n        (not\n          (at crate1 depot0)\n        )\n        (lifting hoist0 crate1)\n        (not\n          (clear crate1)\n        )\n        (not\n          (available hoist0)\n        )\n        (clear pallet0)\n        (not\n          (on crate1 pallet0)\n        )\n      )\n  )",
+            "name": "(lift hoist0 crate1 pallet0 depot0)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist1 crate3 crate0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (available hoist1)\n        (at crate3 depot1)\n        (on crate3 crate0)\n        (clear crate3)\n      )\n    :effect\n      (and\n        (not\n          (at crate3 depot1)\n        )\n        (lifting hoist1 crate3)\n        (not\n          (clear crate3)\n        )\n        (not\n          (available hoist1)\n        )\n        (clear crate0)\n        (not\n          (on crate3 crate0)\n        )\n      )\n  )",
+            "name": "(lift hoist1 crate3 crate0 depot1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate9 depot2)\n        (on crate9 crate5)\n        (clear crate9)\n      )\n    :effect\n      (and\n        (not\n          (at crate9 depot2)\n        )\n        (lifting hoist2 crate9)\n        (not\n          (clear crate9)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate5)\n        (not\n          (on crate9 crate5)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist5 crate8 crate7 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (available hoist5)\n        (at crate8 distributor2)\n        (on crate8 crate7)\n        (clear crate8)\n      )\n    :effect\n      (and\n        (not\n          (at crate8 distributor2)\n        )\n        (lifting hoist5 crate8)\n        (not\n          (clear crate8)\n        )\n        (not\n          (available hoist5)\n        )\n        (clear crate7)\n        (not\n          (on crate8 crate7)\n        )\n      )\n  )",
+            "name": "(lift hoist5 crate8 crate7 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist5 crate8 crate7 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at crate7 distributor2)\n        (clear crate7)\n        (lifting hoist5 crate8)\n      )\n    :effect\n      (and\n        (available hoist5)\n        (not\n          (lifting hoist5 crate8)\n        )\n        (at crate8 distributor2)\n        (not\n          (clear crate7)\n        )\n        (clear crate8)\n        (on crate8 crate7)\n      )\n  )",
+            "name": "(drop hoist5 crate8 crate7 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at crate5 depot2)\n        (clear crate5)\n        (lifting hoist2 crate9)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate9)\n        )\n        (at crate9 depot2)\n        (not\n          (clear crate5)\n        )\n        (clear crate9)\n        (on crate9 crate5)\n      )\n  )",
+            "name": "(drop hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist1 crate3 crate0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (at crate0 depot1)\n        (clear crate0)\n        (lifting hoist1 crate3)\n      )\n    :effect\n      (and\n        (available hoist1)\n        (not\n          (lifting hoist1 crate3)\n        )\n        (at crate3 depot1)\n        (not\n          (clear crate0)\n        )\n        (clear crate3)\n        (on crate3 crate0)\n      )\n  )",
+            "name": "(drop hoist1 crate3 crate0 depot1)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 depot2 distributor2)\n    :precondition\n      (and\n        (at truck0 depot2)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 depot2)\n        )\n        (at truck0 distributor2)\n      )\n  )",
+            "name": "(drive truck0 depot2 distributor2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 distributor0 depot0)\n    :precondition\n      (and\n        (at truck1 distributor0)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 distributor0)\n        )\n        (at truck1 depot0)\n      )\n  )",
+            "name": "(drive truck1 distributor0 depot0)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist0 crate1 truck1 depot0)\n    :precondition\n      (and\n        (at hoist0 depot0)\n        (at truck1 depot0)\n        (lifting hoist0 crate1)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist0 crate1)\n        )\n        (in crate1 truck1)\n        (available hoist0)\n      )\n  )",
+            "name": "(load hoist0 crate1 truck1 depot0)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 depot0 distributor2)\n    :precondition\n      (and\n        (at truck1 depot0)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 depot0)\n        )\n        (at truck1 distributor2)\n      )\n  )",
+            "name": "(drive truck1 depot0 distributor2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 distributor2 distributor1)\n    :precondition\n      (and\n        (at truck1 distributor2)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 distributor2)\n        )\n        (at truck1 distributor1)\n      )\n  )",
+            "name": "(drive truck1 distributor2 distributor1)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist4 crate1 truck1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at truck1 distributor1)\n        (available hoist4)\n        (in crate1 truck1)\n      )\n    :effect\n      (and\n        (not\n          (in crate1 truck1)\n        )\n        (not\n          (available hoist4)\n        )\n        (lifting hoist4 crate1)\n      )\n  )",
+            "name": "(unload hoist4 crate1 truck1 distributor1)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist4 crate1 pallet4 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at pallet4 distributor1)\n        (clear pallet4)\n        (lifting hoist4 crate1)\n      )\n    :effect\n      (and\n        (available hoist4)\n        (not\n          (lifting hoist4 crate1)\n        )\n        (at crate1 distributor1)\n        (not\n          (clear pallet4)\n        )\n        (clear crate1)\n        (on crate1 pallet4)\n      )\n  )",
+            "name": "(drop hoist4 crate1 pallet4 distributor1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist1 crate3 crate0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (available hoist1)\n        (at crate3 depot1)\n        (on crate3 crate0)\n        (clear crate3)\n      )\n    :effect\n      (and\n        (not\n          (at crate3 depot1)\n        )\n        (lifting hoist1 crate3)\n        (not\n          (clear crate3)\n        )\n        (not\n          (available hoist1)\n        )\n        (clear crate0)\n        (not\n          (on crate3 crate0)\n        )\n      )\n  )",
+            "name": "(lift hoist1 crate3 crate0 depot1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate9 depot2)\n        (on crate9 crate5)\n        (clear crate9)\n      )\n    :effect\n      (and\n        (not\n          (at crate9 depot2)\n        )\n        (lifting hoist2 crate9)\n        (not\n          (clear crate9)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate5)\n        (not\n          (on crate9 crate5)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist5 crate8 crate7 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (available hoist5)\n        (at crate8 distributor2)\n        (on crate8 crate7)\n        (clear crate8)\n      )\n    :effect\n      (and\n        (not\n          (at crate8 distributor2)\n        )\n        (lifting hoist5 crate8)\n        (not\n          (clear crate8)\n        )\n        (not\n          (available hoist5)\n        )\n        (clear crate7)\n        (not\n          (on crate8 crate7)\n        )\n      )\n  )",
+            "name": "(lift hoist5 crate8 crate7 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at crate5 depot2)\n        (clear crate5)\n        (lifting hoist2 crate9)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate9)\n        )\n        (at crate9 depot2)\n        (not\n          (clear crate5)\n        )\n        (clear crate9)\n        (on crate9 crate5)\n      )\n  )",
+            "name": "(drop hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist1 crate3 crate0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (at crate0 depot1)\n        (clear crate0)\n        (lifting hoist1 crate3)\n      )\n    :effect\n      (and\n        (available hoist1)\n        (not\n          (lifting hoist1 crate3)\n        )\n        (at crate3 depot1)\n        (not\n          (clear crate0)\n        )\n        (clear crate3)\n        (on crate3 crate0)\n      )\n  )",
+            "name": "(drop hoist1 crate3 crate0 depot1)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist5 crate8 truck0 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck0 distributor2)\n        (lifting hoist5 crate8)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist5 crate8)\n        )\n        (in crate8 truck0)\n        (available hoist5)\n      )\n  )",
+            "name": "(load hoist5 crate8 truck0 distributor2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist5 crate7 crate6 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (available hoist5)\n        (at crate7 distributor2)\n        (on crate7 crate6)\n        (clear crate7)\n      )\n    :effect\n      (and\n        (not\n          (at crate7 distributor2)\n        )\n        (lifting hoist5 crate7)\n        (not\n          (clear crate7)\n        )\n        (not\n          (available hoist5)\n        )\n        (clear crate6)\n        (not\n          (on crate7 crate6)\n        )\n      )\n  )",
+            "name": "(lift hoist5 crate7 crate6 distributor2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 distributor2 distributor0)\n    :precondition\n      (and\n        (at truck0 distributor2)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 distributor2)\n        )\n        (at truck0 distributor0)\n      )\n  )",
+            "name": "(drive truck0 distributor2 distributor0)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist3 crate8 truck0 distributor0)\n    :precondition\n      (and\n        (at hoist3 distributor0)\n        (at truck0 distributor0)\n        (available hoist3)\n        (in crate8 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate8 truck0)\n        )\n        (not\n          (available hoist3)\n        )\n        (lifting hoist3 crate8)\n      )\n  )",
+            "name": "(unload hoist3 crate8 truck0 distributor0)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist3 crate8 pallet3 distributor0)\n    :precondition\n      (and\n        (at hoist3 distributor0)\n        (at pallet3 distributor0)\n        (clear pallet3)\n        (lifting hoist3 crate8)\n      )\n    :effect\n      (and\n        (available hoist3)\n        (not\n          (lifting hoist3 crate8)\n        )\n        (at crate8 distributor0)\n        (not\n          (clear pallet3)\n        )\n        (clear crate8)\n        (on crate8 pallet3)\n      )\n  )",
+            "name": "(drop hoist3 crate8 pallet3 distributor0)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist1 crate3 crate0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (available hoist1)\n        (at crate3 depot1)\n        (on crate3 crate0)\n        (clear crate3)\n      )\n    :effect\n      (and\n        (not\n          (at crate3 depot1)\n        )\n        (lifting hoist1 crate3)\n        (not\n          (clear crate3)\n        )\n        (not\n          (available hoist1)\n        )\n        (clear crate0)\n        (not\n          (on crate3 crate0)\n        )\n      )\n  )",
+            "name": "(lift hoist1 crate3 crate0 depot1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate9 depot2)\n        (on crate9 crate5)\n        (clear crate9)\n      )\n    :effect\n      (and\n        (not\n          (at crate9 depot2)\n        )\n        (lifting hoist2 crate9)\n        (not\n          (clear crate9)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate5)\n        (not\n          (on crate9 crate5)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist5 crate7 crate6 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at crate6 distributor2)\n        (clear crate6)\n        (lifting hoist5 crate7)\n      )\n    :effect\n      (and\n        (available hoist5)\n        (not\n          (lifting hoist5 crate7)\n        )\n        (at crate7 distributor2)\n        (not\n          (clear crate6)\n        )\n        (clear crate7)\n        (on crate7 crate6)\n      )\n  )",
+            "name": "(drop hoist5 crate7 crate6 distributor2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist5 crate7 crate6 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (available hoist5)\n        (at crate7 distributor2)\n        (on crate7 crate6)\n        (clear crate7)\n      )\n    :effect\n      (and\n        (not\n          (at crate7 distributor2)\n        )\n        (lifting hoist5 crate7)\n        (not\n          (clear crate7)\n        )\n        (not\n          (available hoist5)\n        )\n        (clear crate6)\n        (not\n          (on crate7 crate6)\n        )\n      )\n  )",
+            "name": "(lift hoist5 crate7 crate6 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at crate5 depot2)\n        (clear crate5)\n        (lifting hoist2 crate9)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate9)\n        )\n        (at crate9 depot2)\n        (not\n          (clear crate5)\n        )\n        (clear crate9)\n        (on crate9 crate5)\n      )\n  )",
+            "name": "(drop hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 distributor0 depot1)\n    :precondition\n      (and\n        (at truck0 distributor0)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 distributor0)\n        )\n        (at truck0 depot1)\n      )\n  )",
+            "name": "(drive truck0 distributor0 depot1)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist1 crate3 truck0 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (at truck0 depot1)\n        (lifting hoist1 crate3)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist1 crate3)\n        )\n        (in crate3 truck0)\n        (available hoist1)\n      )\n  )",
+            "name": "(load hoist1 crate3 truck0 depot1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist1 crate0 pallet1 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (available hoist1)\n        (at crate0 depot1)\n        (on crate0 pallet1)\n        (clear crate0)\n      )\n    :effect\n      (and\n        (not\n          (at crate0 depot1)\n        )\n        (lifting hoist1 crate0)\n        (not\n          (clear crate0)\n        )\n        (not\n          (available hoist1)\n        )\n        (clear pallet1)\n        (not\n          (on crate0 pallet1)\n        )\n      )\n  )",
+            "name": "(lift hoist1 crate0 pallet1 depot1)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 depot1 depot2)\n    :precondition\n      (and\n        (at truck0 depot1)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 depot1)\n        )\n        (at truck0 depot2)\n      )\n  )",
+            "name": "(drive truck0 depot1 depot2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist2 crate3 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (available hoist2)\n        (in crate3 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate3 truck0)\n        )\n        (not\n          (available hoist2)\n        )\n        (lifting hoist2 crate3)\n      )\n  )",
+            "name": "(unload hoist2 crate3 truck0 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate3 crate9 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at crate9 depot2)\n        (clear crate9)\n        (lifting hoist2 crate3)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate3)\n        )\n        (at crate3 depot2)\n        (not\n          (clear crate9)\n        )\n        (clear crate3)\n        (on crate3 crate9)\n      )\n  )",
+            "name": "(drop hoist2 crate3 crate9 depot2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 distributor1 distributor2)\n    :precondition\n      (and\n        (at truck1 distributor1)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 distributor1)\n        )\n        (at truck1 distributor2)\n      )\n  )",
+            "name": "(drive truck1 distributor1 distributor2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist5 crate7 truck1 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck1 distributor2)\n        (lifting hoist5 crate7)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist5 crate7)\n        )\n        (in crate7 truck1)\n        (available hoist5)\n      )\n  )",
+            "name": "(load hoist5 crate7 truck1 distributor2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist5 crate6 pallet5 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (available hoist5)\n        (at crate6 distributor2)\n        (on crate6 pallet5)\n        (clear crate6)\n      )\n    :effect\n      (and\n        (not\n          (at crate6 distributor2)\n        )\n        (lifting hoist5 crate6)\n        (not\n          (clear crate6)\n        )\n        (not\n          (available hoist5)\n        )\n        (clear pallet5)\n        (not\n          (on crate6 pallet5)\n        )\n      )\n  )",
+            "name": "(lift hoist5 crate6 pallet5 distributor2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 distributor2 distributor1)\n    :precondition\n      (and\n        (at truck1 distributor2)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 distributor2)\n        )\n        (at truck1 distributor1)\n      )\n  )",
+            "name": "(drive truck1 distributor2 distributor1)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist4 crate7 truck1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at truck1 distributor1)\n        (available hoist4)\n        (in crate7 truck1)\n      )\n    :effect\n      (and\n        (not\n          (in crate7 truck1)\n        )\n        (not\n          (available hoist4)\n        )\n        (lifting hoist4 crate7)\n      )\n  )",
+            "name": "(unload hoist4 crate7 truck1 distributor1)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist4 crate7 crate1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at crate1 distributor1)\n        (clear crate1)\n        (lifting hoist4 crate7)\n      )\n    :effect\n      (and\n        (available hoist4)\n        (not\n          (lifting hoist4 crate7)\n        )\n        (at crate7 distributor1)\n        (not\n          (clear crate1)\n        )\n        (clear crate7)\n        (on crate7 crate1)\n      )\n  )",
+            "name": "(drop hoist4 crate7 crate1 distributor1)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate3 crate9 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate3 depot2)\n        (on crate3 crate9)\n        (clear crate3)\n      )\n    :effect\n      (and\n        (not\n          (at crate3 depot2)\n        )\n        (lifting hoist2 crate3)\n        (not\n          (clear crate3)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate9)\n        (not\n          (on crate3 crate9)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate3 crate9 depot2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist2 crate3 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (lifting hoist2 crate3)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist2 crate3)\n        )\n        (in crate3 truck0)\n        (available hoist2)\n      )\n  )",
+            "name": "(load hoist2 crate3 truck0 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate9 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate9 depot2)\n        (on crate9 crate5)\n        (clear crate9)\n      )\n    :effect\n      (and\n        (not\n          (at crate9 depot2)\n        )\n        (lifting hoist2 crate9)\n        (not\n          (clear crate9)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate5)\n        (not\n          (on crate9 crate5)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate9 crate5 depot2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist2 crate9 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (lifting hoist2 crate9)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist2 crate9)\n        )\n        (in crate9 truck0)\n        (available hoist2)\n      )\n  )",
+            "name": "(load hoist2 crate9 truck0 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate5 crate4 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate5 depot2)\n        (on crate5 crate4)\n        (clear crate5)\n      )\n    :effect\n      (and\n        (not\n          (at crate5 depot2)\n        )\n        (lifting hoist2 crate5)\n        (not\n          (clear crate5)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate4)\n        (not\n          (on crate5 crate4)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate5 crate4 depot2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist2 crate5 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (lifting hoist2 crate5)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist2 crate5)\n        )\n        (in crate5 truck0)\n        (available hoist2)\n      )\n  )",
+            "name": "(load hoist2 crate5 truck0 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate4 crate2 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate4 depot2)\n        (on crate4 crate2)\n        (clear crate4)\n      )\n    :effect\n      (and\n        (not\n          (at crate4 depot2)\n        )\n        (lifting hoist2 crate4)\n        (not\n          (clear crate4)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear crate2)\n        (not\n          (on crate4 crate2)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate4 crate2 depot2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist2 crate4 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (lifting hoist2 crate4)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist2 crate4)\n        )\n        (in crate4 truck0)\n        (available hoist2)\n      )\n  )",
+            "name": "(load hoist2 crate4 truck0 depot2)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist2 crate2 pallet2 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (available hoist2)\n        (at crate2 depot2)\n        (on crate2 pallet2)\n        (clear crate2)\n      )\n    :effect\n      (and\n        (not\n          (at crate2 depot2)\n        )\n        (lifting hoist2 crate2)\n        (not\n          (clear crate2)\n        )\n        (not\n          (available hoist2)\n        )\n        (clear pallet2)\n        (not\n          (on crate2 pallet2)\n        )\n      )\n  )",
+            "name": "(lift hoist2 crate2 pallet2 depot2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist2 crate2 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (lifting hoist2 crate2)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist2 crate2)\n        )\n        (in crate2 truck0)\n        (available hoist2)\n      )\n  )",
+            "name": "(load hoist2 crate2 truck0 depot2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 depot2 distributor2)\n    :precondition\n      (and\n        (at truck0 depot2)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 depot2)\n        )\n        (at truck0 distributor2)\n      )\n  )",
+            "name": "(drive truck0 depot2 distributor2)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist5 crate6 truck0 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck0 distributor2)\n        (lifting hoist5 crate6)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist5 crate6)\n        )\n        (in crate6 truck0)\n        (available hoist5)\n      )\n  )",
+            "name": "(load hoist5 crate6 truck0 distributor2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist5 crate2 truck0 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck0 distributor2)\n        (available hoist5)\n        (in crate2 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate2 truck0)\n        )\n        (not\n          (available hoist5)\n        )\n        (lifting hoist5 crate2)\n      )\n  )",
+            "name": "(unload hoist5 crate2 truck0 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist5 crate2 pallet5 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at pallet5 distributor2)\n        (clear pallet5)\n        (lifting hoist5 crate2)\n      )\n    :effect\n      (and\n        (available hoist5)\n        (not\n          (lifting hoist5 crate2)\n        )\n        (at crate2 distributor2)\n        (not\n          (clear pallet5)\n        )\n        (clear crate2)\n        (on crate2 pallet5)\n      )\n  )",
+            "name": "(drop hoist5 crate2 pallet5 distributor2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist5 crate9 truck0 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck0 distributor2)\n        (available hoist5)\n        (in crate9 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate9 truck0)\n        )\n        (not\n          (available hoist5)\n        )\n        (lifting hoist5 crate9)\n      )\n  )",
+            "name": "(unload hoist5 crate9 truck0 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist5 crate9 crate2 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at crate2 distributor2)\n        (clear crate2)\n        (lifting hoist5 crate9)\n      )\n    :effect\n      (and\n        (available hoist5)\n        (not\n          (lifting hoist5 crate9)\n        )\n        (at crate9 distributor2)\n        (not\n          (clear crate2)\n        )\n        (clear crate9)\n        (on crate9 crate2)\n      )\n  )",
+            "name": "(drop hoist5 crate9 crate2 distributor2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist5 crate3 truck0 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at truck0 distributor2)\n        (available hoist5)\n        (in crate3 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate3 truck0)\n        )\n        (not\n          (available hoist5)\n        )\n        (lifting hoist5 crate3)\n      )\n  )",
+            "name": "(unload hoist5 crate3 truck0 distributor2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist5 crate3 crate9 distributor2)\n    :precondition\n      (and\n        (at hoist5 distributor2)\n        (at crate9 distributor2)\n        (clear crate9)\n        (lifting hoist5 crate3)\n      )\n    :effect\n      (and\n        (available hoist5)\n        (not\n          (lifting hoist5 crate3)\n        )\n        (at crate3 distributor2)\n        (not\n          (clear crate9)\n        )\n        (clear crate3)\n        (on crate3 crate9)\n      )\n  )",
+            "name": "(drop hoist5 crate3 crate9 distributor2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 distributor2 depot2)\n    :precondition\n      (and\n        (at truck0 distributor2)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 distributor2)\n        )\n        (at truck0 depot2)\n      )\n  )",
+            "name": "(drive truck0 distributor2 depot2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist2 crate5 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (available hoist2)\n        (in crate5 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate5 truck0)\n        )\n        (not\n          (available hoist2)\n        )\n        (lifting hoist2 crate5)\n      )\n  )",
+            "name": "(unload hoist2 crate5 truck0 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate5 pallet2 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at pallet2 depot2)\n        (clear pallet2)\n        (lifting hoist2 crate5)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate5)\n        )\n        (at crate5 depot2)\n        (not\n          (clear pallet2)\n        )\n        (clear crate5)\n        (on crate5 pallet2)\n      )\n  )",
+            "name": "(drop hoist2 crate5 pallet2 depot2)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist2 crate6 truck0 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at truck0 depot2)\n        (available hoist2)\n        (in crate6 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate6 truck0)\n        )\n        (not\n          (available hoist2)\n        )\n        (lifting hoist2 crate6)\n      )\n  )",
+            "name": "(unload hoist2 crate6 truck0 depot2)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist2 crate6 crate5 depot2)\n    :precondition\n      (and\n        (at hoist2 depot2)\n        (at crate5 depot2)\n        (clear crate5)\n        (lifting hoist2 crate6)\n      )\n    :effect\n      (and\n        (available hoist2)\n        (not\n          (lifting hoist2 crate6)\n        )\n        (at crate6 depot2)\n        (not\n          (clear crate5)\n        )\n        (clear crate6)\n        (on crate6 crate5)\n      )\n  )",
+            "name": "(drop hoist2 crate6 crate5 depot2)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck0 depot2 depot0)\n    :precondition\n      (and\n        (at truck0 depot2)\n      )\n    :effect\n      (and\n        (not\n          (at truck0 depot2)\n        )\n        (at truck0 depot0)\n      )\n  )",
+            "name": "(drive truck0 depot2 depot0)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist0 crate4 truck0 depot0)\n    :precondition\n      (and\n        (at hoist0 depot0)\n        (at truck0 depot0)\n        (available hoist0)\n        (in crate4 truck0)\n      )\n    :effect\n      (and\n        (not\n          (in crate4 truck0)\n        )\n        (not\n          (available hoist0)\n        )\n        (lifting hoist0 crate4)\n      )\n  )",
+            "name": "(unload hoist0 crate4 truck0 depot0)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist0 crate4 pallet0 depot0)\n    :precondition\n      (and\n        (at hoist0 depot0)\n        (at pallet0 depot0)\n        (clear pallet0)\n        (lifting hoist0 crate4)\n      )\n    :effect\n      (and\n        (available hoist0)\n        (not\n          (lifting hoist0 crate4)\n        )\n        (at crate4 depot0)\n        (not\n          (clear pallet0)\n        )\n        (clear crate4)\n        (on crate4 pallet0)\n      )\n  )",
+            "name": "(drop hoist0 crate4 pallet0 depot0)"
+         },
+         {
+            "action": "  (:action lift\n    :parameters (hoist4 crate7 crate1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (available hoist4)\n        (at crate7 distributor1)\n        (on crate7 crate1)\n        (clear crate7)\n      )\n    :effect\n      (and\n        (not\n          (at crate7 distributor1)\n        )\n        (lifting hoist4 crate7)\n        (not\n          (clear crate7)\n        )\n        (not\n          (available hoist4)\n        )\n        (clear crate1)\n        (not\n          (on crate7 crate1)\n        )\n      )\n  )",
+            "name": "(lift hoist4 crate7 crate1 distributor1)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist4 crate7 crate1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at crate1 distributor1)\n        (clear crate1)\n        (lifting hoist4 crate7)\n      )\n    :effect\n      (and\n        (available hoist4)\n        (not\n          (lifting hoist4 crate7)\n        )\n        (at crate7 distributor1)\n        (not\n          (clear crate1)\n        )\n        (clear crate7)\n        (on crate7 crate1)\n      )\n  )",
+            "name": "(drop hoist4 crate7 crate1 distributor1)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 distributor1 depot1)\n    :precondition\n      (and\n        (at truck1 distributor1)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 distributor1)\n        )\n        (at truck1 depot1)\n      )\n  )",
+            "name": "(drive truck1 distributor1 depot1)"
+         },
+         {
+            "action": "  (:action load\n    :parameters (hoist1 crate0 truck1 depot1)\n    :precondition\n      (and\n        (at hoist1 depot1)\n        (at truck1 depot1)\n        (lifting hoist1 crate0)\n      )\n    :effect\n      (and\n        (not\n          (lifting hoist1 crate0)\n        )\n        (in crate0 truck1)\n        (available hoist1)\n      )\n  )",
+            "name": "(load hoist1 crate0 truck1 depot1)"
+         },
+         {
+            "action": "  (:action drive\n    :parameters (truck1 depot1 distributor1)\n    :precondition\n      (and\n        (at truck1 depot1)\n      )\n    :effect\n      (and\n        (not\n          (at truck1 depot1)\n        )\n        (at truck1 distributor1)\n      )\n  )",
+            "name": "(drive truck1 depot1 distributor1)"
+         },
+         {
+            "action": "  (:action unload\n    :parameters (hoist4 crate0 truck1 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at truck1 distributor1)\n        (available hoist4)\n        (in crate0 truck1)\n      )\n    :effect\n      (and\n        (not\n          (in crate0 truck1)\n        )\n        (not\n          (available hoist4)\n        )\n        (lifting hoist4 crate0)\n      )\n  )",
+            "name": "(unload hoist4 crate0 truck1 distributor1)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (hoist4 crate0 crate7 distributor1)\n    :precondition\n      (and\n        (at hoist4 distributor1)\n        (at crate7 distributor1)\n        (clear crate7)\n        (lifting hoist4 crate0)\n      )\n    :effect\n      (and\n        (available hoist4)\n        (not\n          (lifting hoist4 crate0)\n        )\n        (at crate0 distributor1)\n        (not\n          (clear crate7)\n        )\n        (clear crate0)\n        (on crate0 crate7)\n      )\n  )",
+            "name": "(drop hoist4 crate0 crate7 distributor1)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_49DWE8WNW2DEq/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_49DWE8WNW2DEq/log"
+   }
+}

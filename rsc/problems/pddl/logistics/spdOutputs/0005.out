@@ -1,0 +1,89 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 78 nodes.\n\nPDDL problem description loaded: \n\tDomain: LOGISTICS\n\tProblem: LOGISTICS-5-1\n\t#Actions: 78\n\t#Fluents: 48\nLandmarks found: 5\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 15\n#RP_fluents 15\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{5/5/0}:IW(1) -> rel_plan size: 15\n#RP_fluents 15\n{5/4/1}:IW(1) -> [2][3][4][5]rel_plan size: 13\n#RP_fluents 13\n{5/3/2}:IW(1) -> [2][3][4][5][6][7][8][9][10][11];; NOT I-REACHABLE ;;\nTotal time: 0.000698\nNodes generated during search: 113\nNodes expanded during search: 102\nIW search completed\nStarting search with BFS(novel,land,h_add)...\n--[4294967295 / 18]--\n--[3 / 18]--\n--[3 / 17]--\n--[3 / 16]--\n--[3 / 15]--\n--[3 / 14]--\n--[3 / 13]--\n--[3 / 12]--\n--[3 / 11]--\n--[3 / 10]--\n--[3 / 9]--\n--[3 / 8]--\n--[3 / 7]--\n--[3 / 6]--\n--[2 / 6]--\n--[2 / 5]--\n--[2 / 4]--\n--[2 / 3]--\n--[2 / 2]--\n--[2 / 1]--\n--[2 / 0]--\n--[1 / 0]--\nTotal time: 0.001526\nNodes generated during search: 213\nNodes expanded during search: 29\nPlan found with cost: 19\nBFS search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 19,
+      "plan": [
+         {
+            "action": "  (:action load-truck\n    :parameters (obj23 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj23 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj23 pos2)\n        )\n        (in obj23 tru2)\n      )\n  )",
+            "name": "(load-truck obj23 tru2 pos2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 pos2 apt2 cit2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (in-city pos2 cit2)\n        (in-city apt2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 pos2)\n        )\n        (at tru2 apt2)\n      )\n  )",
+            "name": "(drive-truck tru2 pos2 apt2 cit2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj12 tru1 pos1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (at obj12 pos1)\n      )\n    :effect\n      (and\n        (not\n          (at obj12 pos1)\n        )\n        (in obj12 tru1)\n      )\n  )",
+            "name": "(load-truck obj12 tru1 pos1)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru1 pos1 apt1 cit1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (in-city pos1 cit1)\n        (in-city apt1 cit1)\n      )\n    :effect\n      (and\n        (not\n          (at tru1 pos1)\n        )\n        (at tru1 apt1)\n      )\n  )",
+            "name": "(drive-truck tru1 pos1 apt1 cit1)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj12 tru1 apt1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (in obj12 tru1)\n      )\n    :effect\n      (and\n        (not\n          (in obj12 tru1)\n        )\n        (at obj12 apt1)\n      )\n  )",
+            "name": "(unload-truck obj12 tru1 apt1)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj23 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj23 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj23 tru2)\n        )\n        (at obj23 apt2)\n      )\n  )",
+            "name": "(unload-truck obj23 tru2 apt2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 apt2 pos2 cit2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in-city apt2 cit2)\n        (in-city pos2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 apt2)\n        )\n        (at tru2 pos2)\n      )\n  )",
+            "name": "(drive-truck tru2 apt2 pos2 cit2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj22 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj22 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj22 pos2)\n        )\n        (in obj22 tru2)\n      )\n  )",
+            "name": "(load-truck obj22 tru2 pos2)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj21 tru2 pos2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (at obj21 pos2)\n      )\n    :effect\n      (and\n        (not\n          (at obj21 pos2)\n        )\n        (in obj21 tru2)\n      )\n  )",
+            "name": "(load-truck obj21 tru2 pos2)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru2 pos2 apt2 cit2)\n    :precondition\n      (and\n        (at tru2 pos2)\n        (in-city pos2 cit2)\n        (in-city apt2 cit2)\n      )\n    :effect\n      (and\n        (not\n          (at tru2 pos2)\n        )\n        (at tru2 apt2)\n      )\n  )",
+            "name": "(drive-truck tru2 pos2 apt2 cit2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj21 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj21 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj21 tru2)\n        )\n        (at obj21 apt2)\n      )\n  )",
+            "name": "(unload-truck obj21 tru2 apt2)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj22 tru2 apt2)\n    :precondition\n      (and\n        (at tru2 apt2)\n        (in obj22 tru2)\n      )\n    :effect\n      (and\n        (not\n          (in obj22 tru2)\n        )\n        (at obj22 apt2)\n      )\n  )",
+            "name": "(unload-truck obj22 tru2 apt2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt1 apt2)\n    :precondition\n      (at apn1 apt1)\n    :effect\n      (and\n        (not\n          (at apn1 apt1)\n        )\n        (at apn1 apt2)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt1 apt2)"
+         },
+         {
+            "action": "  (:action load-airplane\n    :parameters (obj23 apn1 apt2)\n    :precondition\n      (and\n        (at obj23 apt2)\n        (at apn1 apt2)\n      )\n    :effect\n      (and\n        (not\n          (at obj23 apt2)\n        )\n        (in obj23 apn1)\n      )\n  )",
+            "name": "(load-airplane obj23 apn1 apt2)"
+         },
+         {
+            "action": "  (:action fly-airplane\n    :parameters (apn1 apt2 apt1)\n    :precondition\n      (at apn1 apt2)\n    :effect\n      (and\n        (not\n          (at apn1 apt2)\n        )\n        (at apn1 apt1)\n      )\n  )",
+            "name": "(fly-airplane apn1 apt2 apt1)"
+         },
+         {
+            "action": "  (:action unload-airplane\n    :parameters (obj23 apn1 apt1)\n    :precondition\n      (and\n        (in obj23 apn1)\n        (at apn1 apt1)\n      )\n    :effect\n      (and\n        (not\n          (in obj23 apn1)\n        )\n        (at obj23 apt1)\n      )\n  )",
+            "name": "(unload-airplane obj23 apn1 apt1)"
+         },
+         {
+            "action": "  (:action load-truck\n    :parameters (obj23 tru1 apt1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (at obj23 apt1)\n      )\n    :effect\n      (and\n        (not\n          (at obj23 apt1)\n        )\n        (in obj23 tru1)\n      )\n  )",
+            "name": "(load-truck obj23 tru1 apt1)"
+         },
+         {
+            "action": "  (:action drive-truck\n    :parameters (tru1 apt1 pos1 cit1)\n    :precondition\n      (and\n        (at tru1 apt1)\n        (in-city apt1 cit1)\n        (in-city pos1 cit1)\n      )\n    :effect\n      (and\n        (not\n          (at tru1 apt1)\n        )\n        (at tru1 pos1)\n      )\n  )",
+            "name": "(drive-truck tru1 apt1 pos1 cit1)"
+         },
+         {
+            "action": "  (:action unload-truck\n    :parameters (obj23 tru1 pos1)\n    :precondition\n      (and\n        (at tru1 pos1)\n        (in obj23 tru1)\n      )\n    :effect\n      (and\n        (not\n          (in obj23 tru1)\n        )\n        (at obj23 pos1)\n      )\n  )",
+            "name": "(unload-truck obj23 tru1 pos1)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_4cL2Z8MYUAY7R/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_4cL2Z8MYUAY7R/log"
+   }
+}

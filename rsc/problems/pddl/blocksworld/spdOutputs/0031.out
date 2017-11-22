@@ -1,0 +1,197 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 480 nodes.\n\nPDDL problem description loaded: \n\tDomain: BLOCKS\n\tProblem: BLOCKS-15-0\n\t#Actions: 480\n\t#Fluents: 271\nLandmarks found: 14\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 28\n#RP_fluents 44\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{14/14/0}:IW(1) -> [2][3][4][5][6][7][8][9][10][11][12][13][14][15]rel_plan size: 23\n#RP_fluents 34\n{14/13/1}:IW(1) -> [2][3][4][5]rel_plan size: 22\n#RP_fluents 33\n{14/12/2}:IW(1) -> [2][3]rel_plan size: 20\n#RP_fluents 30\n{14/11/3}:IW(1) -> [2][3][4][5]rel_plan size: 19\n#RP_fluents 29\n{14/10/4}:IW(1) -> [2][3]rel_plan size: 17\n#RP_fluents 26\n{14/9/5}:IW(1) -> [2][3]rel_plan size: 15\n#RP_fluents 23\n{14/8/6}:IW(1) -> [2][3]rel_plan size: 13\n#RP_fluents 20\n{14/7/7}:IW(1) -> [2][3]rel_plan size: 11\n#RP_fluents 17\n{14/6/8}:IW(1) -> [2][3][4][5]rel_plan size: 10\n#RP_fluents 16\n{14/5/9}:IW(1) -> [2][3]rel_plan size: 8\n#RP_fluents 13\n{14/4/10}:IW(1) -> [2][3]rel_plan size: 6\n#RP_fluents 10\n{14/3/11}:IW(1) -> [2][3]rel_plan size: 4\n#RP_fluents 7\n{14/2/12}:IW(1) -> [2][3]rel_plan size: 2\n#RP_fluents 4\n{14/1/13}:IW(1) -> [2][3]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 46\nTotal time: 0.27854\nNodes generated during search: 3466\nNodes expanded during search: 2579\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 46,
+      "plan": [
+         {
+            "action": "  (:action unstack\n    :parameters (m n)\n    :precondition\n      (and\n        (on m n)\n        (clear m)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding m)\n        (clear n)\n        (not\n          (clear m)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on m n)\n        )\n      )\n  )",
+            "name": "(unstack m n)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (m f)\n    :precondition\n      (and\n        (holding m)\n        (clear f)\n      )\n    :effect\n      (and\n        (not\n          (holding m)\n        )\n        (not\n          (clear f)\n        )\n        (clear m)\n        (handempty)\n        (on m f)\n      )\n  )",
+            "name": "(stack m f)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (e j)\n    :precondition\n      (and\n        (on e j)\n        (clear e)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding e)\n        (clear j)\n        (not\n          (clear e)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on e j)\n        )\n      )\n  )",
+            "name": "(unstack e j)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (e)\n    :precondition\n      (holding e)\n    :effect\n      (and\n        (not\n          (holding e)\n        )\n        (clear e)\n        (handempty)\n        (ontable e)\n      )\n  )",
+            "name": "(put-down e)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (j d)\n    :precondition\n      (and\n        (on j d)\n        (clear j)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding j)\n        (clear d)\n        (not\n          (clear j)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on j d)\n        )\n      )\n  )",
+            "name": "(unstack j d)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (j)\n    :precondition\n      (holding j)\n    :effect\n      (and\n        (not\n          (holding j)\n        )\n        (clear j)\n        (handempty)\n        (ontable j)\n      )\n  )",
+            "name": "(put-down j)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (d l)\n    :precondition\n      (and\n        (on d l)\n        (clear d)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding d)\n        (clear l)\n        (not\n          (clear d)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on d l)\n        )\n      )\n  )",
+            "name": "(unstack d l)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (d n)\n    :precondition\n      (and\n        (holding d)\n        (clear n)\n      )\n    :effect\n      (and\n        (not\n          (holding d)\n        )\n        (not\n          (clear n)\n        )\n        (clear d)\n        (handempty)\n        (on d n)\n      )\n  )",
+            "name": "(stack d n)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (l c)\n    :precondition\n      (and\n        (on l c)\n        (clear l)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding l)\n        (clear c)\n        (not\n          (clear l)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on l c)\n        )\n      )\n  )",
+            "name": "(unstack l c)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (l j)\n    :precondition\n      (and\n        (holding l)\n        (clear j)\n      )\n    :effect\n      (and\n        (not\n          (holding l)\n        )\n        (not\n          (clear j)\n        )\n        (clear l)\n        (handempty)\n        (on l j)\n      )\n  )",
+            "name": "(stack l j)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (c g)\n    :precondition\n      (and\n        (on c g)\n        (clear c)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding c)\n        (clear g)\n        (not\n          (clear c)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on c g)\n        )\n      )\n  )",
+            "name": "(unstack c g)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (c)\n    :precondition\n      (holding c)\n    :effect\n      (and\n        (not\n          (holding c)\n        )\n        (clear c)\n        (handempty)\n        (ontable c)\n      )\n  )",
+            "name": "(put-down c)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (i h)\n    :precondition\n      (and\n        (on i h)\n        (clear i)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding i)\n        (clear h)\n        (not\n          (clear i)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on i h)\n        )\n      )\n  )",
+            "name": "(unstack i h)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (i c)\n    :precondition\n      (and\n        (holding i)\n        (clear c)\n      )\n    :effect\n      (and\n        (not\n          (holding i)\n        )\n        (not\n          (clear c)\n        )\n        (clear i)\n        (handempty)\n        (on i c)\n      )\n  )",
+            "name": "(stack i c)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (d n)\n    :precondition\n      (and\n        (on d n)\n        (clear d)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding d)\n        (clear n)\n        (not\n          (clear d)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on d n)\n        )\n      )\n  )",
+            "name": "(unstack d n)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (d)\n    :precondition\n      (holding d)\n    :effect\n      (and\n        (not\n          (holding d)\n        )\n        (clear d)\n        (handempty)\n        (ontable d)\n      )\n  )",
+            "name": "(put-down d)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (n)\n    :precondition\n      (and\n        (clear n)\n        (ontable n)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable n)\n        )\n        (not\n          (clear n)\n        )\n        (not\n          (handempty)\n        )\n        (holding n)\n      )\n  )",
+            "name": "(pick-up n)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (n i)\n    :precondition\n      (and\n        (holding n)\n        (clear i)\n      )\n    :effect\n      (and\n        (not\n          (holding n)\n        )\n        (not\n          (clear i)\n        )\n        (clear n)\n        (handempty)\n        (on n i)\n      )\n  )",
+            "name": "(stack n i)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (d)\n    :precondition\n      (and\n        (clear d)\n        (ontable d)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable d)\n        )\n        (not\n          (clear d)\n        )\n        (not\n          (handempty)\n        )\n        (holding d)\n      )\n  )",
+            "name": "(pick-up d)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (d n)\n    :precondition\n      (and\n        (holding d)\n        (clear n)\n      )\n    :effect\n      (and\n        (not\n          (holding d)\n        )\n        (not\n          (clear n)\n        )\n        (clear d)\n        (handempty)\n        (on d n)\n      )\n  )",
+            "name": "(stack d n)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (l j)\n    :precondition\n      (and\n        (on l j)\n        (clear l)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding l)\n        (clear j)\n        (not\n          (clear l)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on l j)\n        )\n      )\n  )",
+            "name": "(unstack l j)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (l)\n    :precondition\n      (holding l)\n    :effect\n      (and\n        (not\n          (holding l)\n        )\n        (clear l)\n        (handempty)\n        (ontable l)\n      )\n  )",
+            "name": "(put-down l)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (j)\n    :precondition\n      (and\n        (clear j)\n        (ontable j)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable j)\n        )\n        (not\n          (clear j)\n        )\n        (not\n          (handempty)\n        )\n        (holding j)\n      )\n  )",
+            "name": "(pick-up j)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (j d)\n    :precondition\n      (and\n        (holding j)\n        (clear d)\n      )\n    :effect\n      (and\n        (not\n          (holding j)\n        )\n        (not\n          (clear d)\n        )\n        (clear j)\n        (handempty)\n        (on j d)\n      )\n  )",
+            "name": "(stack j d)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (l)\n    :precondition\n      (and\n        (clear l)\n        (ontable l)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable l)\n        )\n        (not\n          (clear l)\n        )\n        (not\n          (handempty)\n        )\n        (holding l)\n      )\n  )",
+            "name": "(pick-up l)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (l j)\n    :precondition\n      (and\n        (holding l)\n        (clear j)\n      )\n    :effect\n      (and\n        (not\n          (holding l)\n        )\n        (not\n          (clear j)\n        )\n        (clear l)\n        (handempty)\n        (on l j)\n      )\n  )",
+            "name": "(stack l j)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (b a)\n    :precondition\n      (and\n        (on b a)\n        (clear b)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding b)\n        (clear a)\n        (not\n          (clear b)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on b a)\n        )\n      )\n  )",
+            "name": "(unstack b a)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (b l)\n    :precondition\n      (and\n        (holding b)\n        (clear l)\n      )\n    :effect\n      (and\n        (not\n          (holding b)\n        )\n        (not\n          (clear l)\n        )\n        (clear b)\n        (handempty)\n        (on b l)\n      )\n  )",
+            "name": "(stack b l)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (a o)\n    :precondition\n      (and\n        (on a o)\n        (clear a)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding a)\n        (clear o)\n        (not\n          (clear a)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on a o)\n        )\n      )\n  )",
+            "name": "(unstack a o)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (a b)\n    :precondition\n      (and\n        (holding a)\n        (clear b)\n      )\n    :effect\n      (and\n        (not\n          (holding a)\n        )\n        (not\n          (clear b)\n        )\n        (clear a)\n        (handempty)\n        (on a b)\n      )\n  )",
+            "name": "(stack a b)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (e)\n    :precondition\n      (and\n        (clear e)\n        (ontable e)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable e)\n        )\n        (not\n          (clear e)\n        )\n        (not\n          (handempty)\n        )\n        (holding e)\n      )\n  )",
+            "name": "(pick-up e)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (e a)\n    :precondition\n      (and\n        (holding e)\n        (clear a)\n      )\n    :effect\n      (and\n        (not\n          (holding e)\n        )\n        (not\n          (clear a)\n        )\n        (clear e)\n        (handempty)\n        (on e a)\n      )\n  )",
+            "name": "(stack e a)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (m f)\n    :precondition\n      (and\n        (on m f)\n        (clear m)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding m)\n        (clear f)\n        (not\n          (clear m)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on m f)\n        )\n      )\n  )",
+            "name": "(unstack m f)"
+         },
+         {
+            "action": "  (:action put-down\n    :parameters (m)\n    :precondition\n      (holding m)\n    :effect\n      (and\n        (not\n          (holding m)\n        )\n        (clear m)\n        (handempty)\n        (ontable m)\n      )\n  )",
+            "name": "(put-down m)"
+         },
+         {
+            "action": "  (:action unstack\n    :parameters (f k)\n    :precondition\n      (and\n        (on f k)\n        (clear f)\n        (handempty)\n      )\n    :effect\n      (and\n        (holding f)\n        (clear k)\n        (not\n          (clear f)\n        )\n        (not\n          (handempty)\n        )\n        (not\n          (on f k)\n        )\n      )\n  )",
+            "name": "(unstack f k)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (f e)\n    :precondition\n      (and\n        (holding f)\n        (clear e)\n      )\n    :effect\n      (and\n        (not\n          (holding f)\n        )\n        (not\n          (clear e)\n        )\n        (clear f)\n        (handempty)\n        (on f e)\n      )\n  )",
+            "name": "(stack f e)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (m)\n    :precondition\n      (and\n        (clear m)\n        (ontable m)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable m)\n        )\n        (not\n          (clear m)\n        )\n        (not\n          (handempty)\n        )\n        (holding m)\n      )\n  )",
+            "name": "(pick-up m)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (m f)\n    :precondition\n      (and\n        (holding m)\n        (clear f)\n      )\n    :effect\n      (and\n        (not\n          (holding m)\n        )\n        (not\n          (clear f)\n        )\n        (clear m)\n        (handempty)\n        (on m f)\n      )\n  )",
+            "name": "(stack m f)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (k)\n    :precondition\n      (and\n        (clear k)\n        (ontable k)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable k)\n        )\n        (not\n          (clear k)\n        )\n        (not\n          (handempty)\n        )\n        (holding k)\n      )\n  )",
+            "name": "(pick-up k)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (k m)\n    :precondition\n      (and\n        (holding k)\n        (clear m)\n      )\n    :effect\n      (and\n        (not\n          (holding k)\n        )\n        (not\n          (clear m)\n        )\n        (clear k)\n        (handempty)\n        (on k m)\n      )\n  )",
+            "name": "(stack k m)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (h)\n    :precondition\n      (and\n        (clear h)\n        (ontable h)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable h)\n        )\n        (not\n          (clear h)\n        )\n        (not\n          (handempty)\n        )\n        (holding h)\n      )\n  )",
+            "name": "(pick-up h)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (h k)\n    :precondition\n      (and\n        (holding h)\n        (clear k)\n      )\n    :effect\n      (and\n        (not\n          (holding h)\n        )\n        (not\n          (clear k)\n        )\n        (clear h)\n        (handempty)\n        (on h k)\n      )\n  )",
+            "name": "(stack h k)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (o)\n    :precondition\n      (and\n        (clear o)\n        (ontable o)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable o)\n        )\n        (not\n          (clear o)\n        )\n        (not\n          (handempty)\n        )\n        (holding o)\n      )\n  )",
+            "name": "(pick-up o)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (o h)\n    :precondition\n      (and\n        (holding o)\n        (clear h)\n      )\n    :effect\n      (and\n        (not\n          (holding o)\n        )\n        (not\n          (clear h)\n        )\n        (clear o)\n        (handempty)\n        (on o h)\n      )\n  )",
+            "name": "(stack o h)"
+         },
+         {
+            "action": "  (:action pick-up\n    :parameters (g)\n    :precondition\n      (and\n        (clear g)\n        (ontable g)\n        (handempty)\n      )\n    :effect\n      (and\n        (not\n          (ontable g)\n        )\n        (not\n          (clear g)\n        )\n        (not\n          (handempty)\n        )\n        (holding g)\n      )\n  )",
+            "name": "(pick-up g)"
+         },
+         {
+            "action": "  (:action stack\n    :parameters (g o)\n    :precondition\n      (and\n        (holding g)\n        (clear o)\n      )\n    :effect\n      (and\n        (not\n          (holding g)\n        )\n        (not\n          (clear o)\n        )\n        (clear g)\n        (handempty)\n        (on g o)\n      )\n  )",
+            "name": "(stack g o)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_43ecTNzIx7epj/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_43ecTNzIx7epj/log"
+   }
+}

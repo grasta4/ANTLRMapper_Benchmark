@@ -1,0 +1,73 @@
+{
+   "status": "ok",
+   "result": {
+      "output": " --- OK.\n Match tree built with 34 nodes.\n\nPDDL problem description loaded: \n\tDomain: GRIPPER-TYPED\n\tProblem: GRIPPER-X-1\n\t#Actions: 34\n\t#Fluents: 20\nLandmarks found: 4\nStarting search with IW (time budget is 60 secs)...\nrel_plan size: 9\n#RP_fluents 10\nCaption\n{#goals, #UNnachieved,  #Achieved} -> IW(max_w)\n\n{4/4/0}:IW(1) -> [2][3][4]rel_plan size: 7\n#RP_fluents 8\n{4/3/1}:IW(1) -> [2][3][4][5]rel_plan size: 5\n#RP_fluents 6\n{4/2/2}:IW(1) -> [2][3][4][5]rel_plan size: 3\n#RP_fluents 4\n{4/1/3}:IW(1) -> [2][3][4][5]rel_plan size: 0\n#RP_fluents 0Plan found with cost: 15\nTotal time: 0.00036\nNodes generated during search: 97\nNodes expanded during search: 59\nIW search completed\n",
+      "parse_status": "ok",
+      "type": "full",
+      "length": 15,
+      "plan": [
+         {
+            "action": "  (:action pick\n    :parameters (ball4 rooma left)\n    :precondition\n      (and\n        (at ball4 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball4 left)\n        (not\n          (at ball4 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball4 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball4 roomb left)\n    :precondition\n      (and\n        (carry ball4 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball4 roomb)\n        (free left)\n        (not\n          (carry ball4 left)\n        )\n      )\n  )",
+            "name": "(drop ball4 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball3 rooma left)\n    :precondition\n      (and\n        (at ball3 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball3 left)\n        (not\n          (at ball3 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball3 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball3 roomb left)\n    :precondition\n      (and\n        (carry ball3 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball3 roomb)\n        (free left)\n        (not\n          (carry ball3 left)\n        )\n      )\n  )",
+            "name": "(drop ball3 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball2 rooma left)\n    :precondition\n      (and\n        (at ball2 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball2 left)\n        (not\n          (at ball2 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball2 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball2 roomb left)\n    :precondition\n      (and\n        (carry ball2 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball2 roomb)\n        (free left)\n        (not\n          (carry ball2 left)\n        )\n      )\n  )",
+            "name": "(drop ball2 roomb left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (roomb rooma)\n    :precondition\n      (at-robby roomb)\n    :effect\n      (and\n        (at-robby rooma)\n        (not\n          (at-robby roomb)\n        )\n      )\n  )",
+            "name": "(move roomb rooma)"
+         },
+         {
+            "action": "  (:action pick\n    :parameters (ball1 rooma left)\n    :precondition\n      (and\n        (at ball1 rooma)\n        (at-robby rooma)\n        (free left)\n      )\n    :effect\n      (and\n        (carry ball1 left)\n        (not\n          (at ball1 rooma)\n        )\n        (not\n          (free left)\n        )\n      )\n  )",
+            "name": "(pick ball1 rooma left)"
+         },
+         {
+            "action": "  (:action move\n    :parameters (rooma roomb)\n    :precondition\n      (at-robby rooma)\n    :effect\n      (and\n        (at-robby roomb)\n        (not\n          (at-robby rooma)\n        )\n      )\n  )",
+            "name": "(move rooma roomb)"
+         },
+         {
+            "action": "  (:action drop\n    :parameters (ball1 roomb left)\n    :precondition\n      (and\n        (carry ball1 left)\n        (at-robby roomb)\n      )\n    :effect\n      (and\n        (at ball1 roomb)\n        (free left)\n        (not\n          (carry ball1 left)\n        )\n      )\n  )",
+            "name": "(drop ball1 roomb left)"
+         }
+      ],
+      "planPath": "/tmp/solver_planning_domains_tmp_4OG0ZH0NzdIv4/plan",
+      "logPath": "/tmp/solver_planning_domains_tmp_4OG0ZH0NzdIv4/log"
+   }
+}
