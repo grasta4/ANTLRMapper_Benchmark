@@ -1,0 +1,40 @@
+Doing: <asp/3-col> with solver <clingo> 0001.out, 0002.out, -> DONE.
+Doing: <asp/3-col> with solver <dlv> 0001.out, 0002.out, -> DONE.
+Doing: <asp/3-col> with solver <dlv2> 0001.out, 0002.out, -> DONE.
+Doing: <asp/ancestor> with solver <clingo> 0001.out, 0002.out, -> DONE.
+Doing: <asp/ancestor> with solver <dlv> 0001.out, 0002.out, -> DONE.
+Doing: <asp/ancestor> with solver <dlv2> 0001.out, 0002.out, -> DONE.
+Doing: <asp/graph_colouring> with solver <clingo> 0001.out, 0003.out, 0007.out, 0009.out, 0010.out, 0013.out, -> DONE.
+Doing: <asp/graph_colouring> with solver <dlv> -> DONE.
+Doing: <asp/graph_colouring> with solver <dlv2> 0001.out, 0003.out, 0007.out, 0009.out, 0010.out, 0013.out, -> DONE.
+Doing: <asp/hanoi_tower> with solver <clingo> 0001.out, 0003.out, 0009.out, 0010.out, 0011.out, 0024.out, 0029.out, 0030.out, 0031.out, 0035.out, 0037.out, 0039.out, 0040.out, 0043.out, 0044.out, -> DONE.
+Doing: <asp/hanoi_tower> with solver <dlv> -> DONE.
+Doing: <asp/hanoi_tower> with solver <dlv2> 0001.out, 0003.out, 0009.out, 0010.out, 0011.out, 0024.out, 0029.out, 0030.out, 0031.out, 0035.out, 0037.out, 0039.out, 0040.out, 0043.out, 0044.out, -> DONE.
+Doing: <asp/keys> with solver <clingo> 0001.out, -> DONE.
+Doing: <asp/keys> with solver <dlv> 0001.out, -> DONE.
+Doing: <asp/keys> with solver <dlv2> 0001.out, -> DONE.
+Doing: <asp/labyrinth> with solver <clingo> 0003.out, 0011.out, 0018.out, 0028.out, 0036.out, 0043.out, 0051.out, 0059.out, 0067.out, 0075.out, 0092.out, 0100.out, 0110.out, 0125.out, 0132.out, 0159.out, 0165.out, 0175.out, -> DONE.
+Doing: <asp/labyrinth> with solver <dlv> -> DONE.
+Doing: <asp/labyrinth> with solver <dlv2> 0003.out, 0011.out, 0018.out, 0028.out, 0036.out, 0043.out, 0051.out, 0059.out, 0067.out, 0075.out, 0092.out, 0100.out, 0110.out, 0125.out, 0132.out, 0159.out, 0165.out, 0175.out, -> DONE.
+Doing: <asp/ladder> with solver <clingo> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, -> DONE.
+Doing: <asp/ladder> with solver <dlv> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, -> DONE.
+Doing: <asp/ladder> with solver <dlv2> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, -> DONE.
+Doing: <asp/maximal_clique_problem> with solver <clingo> 0001.out, 0002.out, 0003.out, 0006.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0014.out, 0017.out, 0018.out, 0020.out, 0023.out, 0025.out, 0026.out, -> DONE.
+Doing: <asp/maximal_clique_problem> with solver <dlv> -> DONE.
+Doing: <asp/maximal_clique_problem> with solver <dlv2> 0001.out, 0002.out, 0003.out, 0006.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0014.out, 0017.out, 0018.out, 0020.out, 0023.out, 0025.out, 0026.out, -> DONE.
+Doing: <asp/my_tests> with solver <clingo> -> DONE.
+Doing: <asp/my_tests> with solver <dlv> -> DONE.
+Doing: <asp/my_tests> with solver <dlv2> -> DONE.
+Doing: <asp/network> with solver <clingo> 0001.out, -> DONE.
+Doing: <asp/network> with solver <dlv> 0001.out, -> DONE.
+Doing: <asp/network> with solver <dlv2> 0001.out, -> DONE.
+Doing: <asp/stable_marriage> with solver <clingo> 0001.out, 0002.out, 0003.out, 0006.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0014.out, 0017.out, 0018.out, 0020.out, 0023.out, 0024.out, 0025.out, 0026.out, -> DONE.
+Doing: <asp/stable_marriage> with solver <dlv> -> DONE.
+Doing: <asp/stable_marriage> with solver <dlv2> 0001.out, 0002.out, 0003.out, 0006.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0014.out, 0017.out, 0018.out, 0020.out, 0023.out, 0024.out, 0025.out, 0026.out, -> DONE.
+Doing: <asp/visit_all> with solver <clingo> 0002.out, 0007.out, 0024.out, 0027.out, 0041.out, 0048.out, 0062.out, 0066.out, 0081.out, 0083.out, 0088.out, -> DONE.
+Doing: <asp/visit_all> with solver <dlv> -> DONE.
+Doing: <asp/visit_all> with solver <dlv2> 0002.out, 0007.out, 0024.out, 0027.out, 0041.out, 0048.out, 0062.out, 0066.out, 0081.out, 0083.out, 0088.out, -> DONE.
+Doing: <pddl/blocksworld> with solver <spd> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, 0021.out, 0022.out, 0023.out, 0024.out, 0025.out, 0026.out, 0027.out, 0028.out, 0029.out, 0030.out, 0031.out, 0032.out, 0033.out, 0034.out, 0035.out, -> DONE.
+Doing: <pddl/depots> with solver <spd> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, 0021.out, 0022.out, -> DONE.
+Doing: <pddl/gripper> with solver <spd> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, -> DONE.
+Doing: <pddl/logistics> with solver <spd> 0001.out, 0002.out, 0003.out, 0004.out, 0005.out, 0006.out, 0007.out, 0008.out, 0009.out, 0010.out, 0011.out, 0012.out, 0013.out, 0014.out, 0015.out, 0016.out, 0017.out, 0018.out, 0019.out, 0020.out, 0021.out, 0022.out, 0023.out, 0024.out, 0025.out, 0026.out, 0027.out, 0028.out, -> DONE.
