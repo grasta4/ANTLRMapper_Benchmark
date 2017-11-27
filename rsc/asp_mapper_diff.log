@@ -1,0 +1,64 @@
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/3-col
+Comparing problems/asp/3-col/mapper/parserSolutions/0001.mapper.sol problems/asp/3-col/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+Comparing problems/asp/3-col/mapper/parserSolutions/0002.mapper.sol problems/asp/3-col/mapper/regexSolutions/0002.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/ancestor
+Comparing problems/asp/ancestor/mapper/parserSolutions/0001.mapper.sol problems/asp/ancestor/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+Comparing problems/asp/ancestor/mapper/parserSolutions/0002.mapper.sol problems/asp/ancestor/mapper/regexSolutions/0002.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/graph_colouring
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0001.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0003.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0003.mapper.sol -> Files are equals.
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0007.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0007.mapper.sol -> Files are equals.
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0009.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0009.mapper.sol -> Files are equals.
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0010.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0010.mapper.sol -> Files are equals.
+Comparing problems/asp/graph_colouring/mapper/parserSolutions/0013.mapper.sol problems/asp/graph_colouring/mapper/regexSolutions/0013.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/hanoi_tower
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0001.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0003.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0003.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0009.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0009.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0010.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0010.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0011.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0011.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0024.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0024.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0029.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0029.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0030.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0030.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0031.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0031.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0035.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0035.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0037.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0037.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0039.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0039.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0040.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0040.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0043.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0043.mapper.sol -> Files are equals.
+Comparing problems/asp/hanoi_tower/mapper/parserSolutions/0044.mapper.sol problems/asp/hanoi_tower/mapper/regexSolutions/0044.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/keys
+Comparing problems/asp/keys/mapper/parserSolutions/0001.mapper.sol problems/asp/keys/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/labyrinth
+Comparing problems/asp/labyrinth/mapper/parserSolutions/0018.mapper.sol problems/asp/labyrinth/mapper/regexSolutions/0018.mapper.sol -> Files are equals.
+Comparing problems/asp/labyrinth/mapper/parserSolutions/0028.mapper.sol problems/asp/labyrinth/mapper/regexSolutions/0028.mapper.sol -> Files are equals.
+Comparing problems/asp/labyrinth/mapper/parserSolutions/0043.mapper.sol problems/asp/labyrinth/mapper/regexSolutions/0043.mapper.sol -> Files are equals.
+Comparing problems/asp/labyrinth/mapper/parserSolutions/0100.mapper.sol problems/asp/labyrinth/mapper/regexSolutions/0100.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/ladder
+Comparing problems/asp/ladder/mapper/parserSolutions/0001.mapper.sol problems/asp/ladder/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0002.mapper.sol problems/asp/ladder/mapper/regexSolutions/0002.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0003.mapper.sol problems/asp/ladder/mapper/regexSolutions/0003.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0004.mapper.sol problems/asp/ladder/mapper/regexSolutions/0004.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0005.mapper.sol problems/asp/ladder/mapper/regexSolutions/0005.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0006.mapper.sol problems/asp/ladder/mapper/regexSolutions/0006.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0007.mapper.sol problems/asp/ladder/mapper/regexSolutions/0007.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0008.mapper.sol problems/asp/ladder/mapper/regexSolutions/0008.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0009.mapper.sol problems/asp/ladder/mapper/regexSolutions/0009.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0010.mapper.sol problems/asp/ladder/mapper/regexSolutions/0010.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0011.mapper.sol problems/asp/ladder/mapper/regexSolutions/0011.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0012.mapper.sol problems/asp/ladder/mapper/regexSolutions/0012.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0013.mapper.sol problems/asp/ladder/mapper/regexSolutions/0013.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0014.mapper.sol problems/asp/ladder/mapper/regexSolutions/0014.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0015.mapper.sol problems/asp/ladder/mapper/regexSolutions/0015.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0016.mapper.sol problems/asp/ladder/mapper/regexSolutions/0016.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0017.mapper.sol problems/asp/ladder/mapper/regexSolutions/0017.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0018.mapper.sol problems/asp/ladder/mapper/regexSolutions/0018.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0019.mapper.sol problems/asp/ladder/mapper/regexSolutions/0019.mapper.sol -> Files are equals.
+Comparing problems/asp/ladder/mapper/parserSolutions/0020.mapper.sol problems/asp/ladder/mapper/regexSolutions/0020.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/network
+Comparing problems/asp/network/mapper/parserSolutions/0001.mapper.sol problems/asp/network/mapper/regexSolutions/0001.mapper.sol -> Files are equals.
+grasta@grasta-PC:~/Desktop$ perl mapper_diff.pl problems/asp/stable_marriage
+Comparing problems/asp/stable_marriage/mapper/parserSolutions/0002.mapper.sol problems/asp/stable_marriage/mapper/regexSolutions/0002.mapper.sol -> Files are equals.
+Comparing problems/asp/stable_marriage/mapper/parserSolutions/0009.mapper.sol problems/asp/stable_marriage/mapper/regexSolutions/0009.mapper.sol -> Files are equals.
+Comparing problems/asp/stable_marriage/mapper/parserSolutions/0010.mapper.sol problems/asp/stable_marriage/mapper/regexSolutions/0010.mapper.sol -> Files are equals.
+Comparing problems/asp/stable_marriage/mapper/parserSolutions/0012.mapper.sol problems/asp/stable_marriage/mapper/regexSolutions/0012.mapper.sol -> Files are equals.
